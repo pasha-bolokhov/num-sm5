@@ -1,0 +1,49 @@
+{VERSION 5 0 "IBM RISC UNIX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Headi
+ng 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }0 0 
+0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 
+-1 0 }{PSTYLE "" 3 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 3 257 1 {CSTYLE "
+" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 
+0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart:" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 256 "" 0 "" {TEXT -1 63 "Testing the
+ solution of the RG equation for the Yukawa coupling" }}{PARA 257 "" 
+0 "" {TEXT -1 46 "with accounting for one gauge coupling running" }}
+{PARA 258 "" 0 "" {TEXT -1 48 "All quantites are assumed to be to one \+
+loop only" }}}{EXCHG {PARA 5 "> " 0 "" {MPLTEXT 1 0 1 "\n" }{TEXT -1 
+70 "This is the running coupling constant, for example the strong coup
+ling" }{MPLTEXT 1 0 56 "\ngg := t  ->  g0^2 / ( 1  - 2 * beta_0*g0^2 *
+ (t - t0));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#ggGf*6#%\"tG6\"6$%)o
+peratorG%&arrowGF(*&%#g0G\"\"#,&\"\"\"F0**F.F0%'beta_0GF0)F-F.F0,&9$F0
+%#t0G!\"\"F0F7F7F(F(F(" }}}{EXCHG {PARA 5 "" 0 "" {TEXT -1 91 "This is
+ the solution of the RG equation, which is supposed to satisfy the ini
+tial condition" }{MPLTEXT 1 0 156 "\nlambda := t -> sqrt((beta_0 - b)/
+a * gg(t) /\n         ( 1 - (gg(t)/g0^2)^((beta_0 - b)/beta_0)  *\n   \+
+           ( 1 - ((beta_0 - b)/a)*(g0^2/lambda0^2))));" }}{PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'lambdaGf
+*6#%\"tG6\"6$%)operatorG%&arrowGF(-%%sqrtG6#**,&%'beta_0G\"\"\"%\"bG!
+\"\"F2%\"aGF4-%#ggG6#9$F2,&F2F2*&)*&F6F2%#g0G!\"#*&F0F2F1F4F2,&F2F2**F
+0F2F5F4F>\"\"#%(lambda0GF?F4F2F4F4F(F(F(" }}}{EXCHG {PARA 5 "" 0 "" 
+{TEXT -1 35 "This is the RG equation to one loop" }}{PARA 5 "> " 0 "" 
+{MPLTEXT 1 0 85 "\nsimplify(expand(eval(diff(lambda(t),t) - a * lambda
+(t)^3 - b * gg(t) * lambda(t))));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+\"\"!" }}}{EXCHG {PARA 5 "" 0 "" {TEXT -1 41 "This is the test of the \+
+initial condition" }{MPLTEXT 1 0 2 "\n\n" }{TEXT -1 0 "" }{MPLTEXT 1 
+0 37 "simplify(expand(eval(lambda(t0)^2)));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*$)%(lambda0G\"\"#\"\"\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "8 0 0" 0 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

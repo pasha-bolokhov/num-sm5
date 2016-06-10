@@ -1,0 +1,1764 @@
+%% Created by Maple 7.00 (IBM RISC UNIX)
+%% Source Worksheet: above_ew.mws
+%% Generated: Mon Apr 26 18:05:00 2004
+\documentclass{article}
+\usepackage{maple2e}
+ \def\emptyline{\vspace{12pt}}
+\DefineParaStyle{Author}
+\DefineParaStyle{Heading 1}
+\DefineParaStyle{Maple Output}
+\DefineParaStyle{Title}
+\DefineParaStyle{Warning}
+\DefineCharStyle{2D Math}
+\DefineCharStyle{2D Output}
+\begin{document}
+\pagestyle{empty}
+\begin{maplegroup}
+\begin{Title}
+RG Equation for Lorentz
+violating operators above
+the EW symmetry 
+restoration scale
+\end{Title}
+
+\begin{Author}
+P.A.Bolokhov
+\end{Author}
+
+\begin{Title}
+\begin{mapleinput}
+\end{mapleinput}
+\end{Title}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{restart;
+with(linalg):
+}{%
+}Warning, the protected names norm and trace have been redefined and
+unprotected
+\end{mapleinput}
+
+\mapleresult
+\begin{maplettyout}
+Warning, the protected names norm and trace have been redefined and
+unprotected
+\end{maplettyout}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{#htranspose:=X->X^(TS);
+ant := (M,N)->M&*N + N&*M;
+unit := matrix(3,3, [1,0,0,
+                     0,1,0,
+                     0,0,1]);
+zmatrix := matrix(3,3, [0,0,0,0,0,0,0,0,0]);}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{ant := proc (M, N) options operator, arrow; `&*`(M,N)+`&*`(N,M) end
+proc;}{%
+\[
+\mathit{ant} := (M, \,N)\rightarrow \mathrm{`\&*`}(M, \,N) + 
+\mathrm{`\&*`}(N, \,M)
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{unit := matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);}{%
+\[
+\mathit{unit} :=  \left[ 
+{\begin{array}{rrr}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{zmatrix := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+\mathit{zmatrix} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{center}
+\textit{\textbf{\underline{{\large Definition of Divergency
+Coefficients}}}}
+\end{center}
+
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{N[g] := 3;                    # the number of generations
+N[W] := 2;                    # N of SU(2)
+N[S] := 3;                    # N of SU(3)
+T[W] := (N[W]^2 - 1)/(2*N[W]);
+T[S] := (N[S]^2 - 1)/(2*N[S]);
+C[1] := 1/2;
+
+
+
+A    :=   19/(48*Pi^2);
+G    :=    1/(8*Pi^2);
+L    := -  1/(48*Pi^2);
+K    := -  5/(48*Pi^2);
+Q[Y] := -  7/(6*Pi^2);
+A[kappa] := 2/(3*Pi^2);
+A[H]     := - 1/(96*Pi^2);
+K[H]     := - 1/(64*Pi^2);
+L[H]     := - 1/(6*Pi^2);
+G[H]     :=   1/(16*Pi^2);
+G[kappa] := - 1/(4*Pi^2);
+F[H]     :=   1/(4*Pi^2);
+
+alpha[1] :=     ((5/3)*N[g] + 1/8)/(6*Pi^2);
+alpha[2] :=   - (19 - 8*N[g])/(48*Pi^2);
+alpha[3] :=   - (5  - (4/3)*N[g])/(8*Pi^2);
+
+# beta-function coefficient of the lambda[t-quark]
+C[lambda] := (1/2)*(1/2)*F[H]*N[S] + (1/2)*G[H]*(2+1);}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{N[g] := 3;}{%
+\[
+{N_{g}} := 3
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{N[W] := 2;}{%
+\[
+{N_{\mathrm{W}}} := 2
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{N[S] := 3;}{%
+\[
+{N_{S}} := 3
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{T[W] := 3/4;}{%
+\[
+{T_{\mathrm{W}}} := {\displaystyle \frac {3}{4}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{T[S] := 4/3;}{%
+\[
+{T_{S}} := {\displaystyle \frac {4}{3}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{C[1] := 1/2;}{%
+\[
+{C_{1}} := {\displaystyle \frac {1}{2}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{A := 19/48*1/(Pi^2);}{%
+\[
+A := {\displaystyle \frac {19}{48}} \,{\displaystyle \frac {1}{
+\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G := 1/8*1/(Pi^2);}{%
+\[
+G := {\displaystyle \frac {1}{8}} \,{\displaystyle \frac {1}{\pi 
+^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{L := -1/48*1/(Pi^2);}{%
+\[
+L :=  - {\displaystyle \frac {1}{48}} \,{\displaystyle \frac {1}{
+\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{K := -5/48*1/(Pi^2);}{%
+\[
+K :=  - {\displaystyle \frac {5}{48}} \,{\displaystyle \frac {1}{
+\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Q[Y] := -7/6*1/(Pi^2);}{%
+\[
+{Q_{Y}} :=  - {\displaystyle \frac {7}{6}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{A[kappa] := 2/3*1/(Pi^2);}{%
+\[
+{A_{\kappa }} := {\displaystyle \frac {2}{3}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{A[H] := -1/96*1/(Pi^2);}{%
+\[
+{A_{H}} :=  - {\displaystyle \frac {1}{96}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{K[H] := -1/64*1/(Pi^2);}{%
+\[
+{K_{H}} :=  - {\displaystyle \frac {1}{64}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{L[H] := -1/6*1/(Pi^2);}{%
+\[
+{L_{H}} :=  - {\displaystyle \frac {1}{6}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G[H] := 1/16*1/(Pi^2);}{%
+\[
+{G_{H}} := {\displaystyle \frac {1}{16}} \,{\displaystyle \frac {
+1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{G[kappa] := -1/4*1/(Pi^2);}{%
+\[
+{G_{\kappa }} :=  - {\displaystyle \frac {1}{4}} \,
+{\displaystyle \frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{F[H] := 1/4*1/(Pi^2);}{%
+\[
+{F_{H}} := {\displaystyle \frac {1}{4}} \,{\displaystyle \frac {1
+}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha[1] := 41/48*1/(Pi^2);}{%
+\[
+{\alpha _{1}} := {\displaystyle \frac {41}{48}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha[2] := 5/48*1/(Pi^2);}{%
+\[
+{\alpha _{2}} := {\displaystyle \frac {5}{48}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha[3] := -1/8*1/(Pi^2);}{%
+\[
+{\alpha _{3}} :=  - {\displaystyle \frac {1}{8}} \,
+{\displaystyle \frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{C[lambda] := 9/32*1/(Pi^2);}{%
+\[
+{C_{\lambda }} := {\displaystyle \frac {9}{32}} \,{\displaystyle 
+\frac {1}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\emptyline
+\begin{maplegroup}
+\begin{center}
+\textit{\textbf{\underline{{\large Main Cycle starts here}}}}
+\end{center}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{NN := 10;    # the number of intervals}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{NN := 10;}{%
+\[
+\mathit{NN} := 10
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{Lambda[High_scale] := 10^15; # GeV, new physics scale
+t[High_scale] := evalf(log(Lambda[High_scale]));
+Lambda[EW] := 100;   # GeV, the scale of the EW symmetry
+m[t] := 174;         # GeV, the mass of the t-quark
+Higgs_VEV := 246.22;
+t[EW] := log(Lambda[EW]);
+delta_t := (t[High_scale] - t[EW]) / NN;}{%
+}
+\end{mapleinput}
+
+\begin{mapleinput}
+\mapleinline{inert}{2d}{High_scale := 10000000000;}{%
+\[
+\mathit{High\_scale} := 10000000000
+\]
+%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Lambda[High_scale] := 1000000000000000;}{%
+\[
+{\Lambda _{\mathit{High\_scale}}} := 1000000000000000
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{t[High_scale] := 34.53877639;}{%
+\[
+{t_{\mathit{High\_scale}}} := 34.53877639
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Lambda[EW] := 100;}{%
+\[
+{\Lambda _{\mathit{EW}}} := 100
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{m[t] := 174;}{%
+\[
+{m_{t}} := 174
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Higgs_VEV := 246.22;}{%
+\[
+\mathit{Higgs\_VEV} := 246.22
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{t[EW] := ln(100);}{%
+\[
+{t_{\mathit{EW}}} := \mathrm{ln}(100)
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{delta_t := 3.453877639-1/10*ln(100);}{%
+\[
+\mathit{delta\_t} := 3.453877639 - {\displaystyle \frac {1}{10}} 
+\,\mathrm{ln}(100)
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{eta[L] := matrix(3,3);
+}{%
+}
+\mapleinline{inert}{2d}{eta[L] := array(1 .. 3,1 .. 3,[]);}{%
+\[
+{\eta _{L}} := \mathrm{array}(1 .. 3, \,1 .. 3, \,[])
+\]
+%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta[L] := array(1 .. 3,1 .. 3,[]);}{%
+\[
+{\eta _{L}} := \mathrm{array}(1 .. 3, \,1 .. 3, \,[])
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{#
+# first we need to determine all couplings
+#
+# Gauge couplings
+#
+# first we set them at the EW scale
+#
+  mu0 := Lambda[EW];
+  theta[W] := arcsin(sqrt(0.23));
+  alpha[QED] := 1/128;
+  alpha[S] := 0.120; 
+  e[QED] := sqrt(4*Pi*alpha[QED]);
+  g10 := e[QED]/cos(theta[W]);
+  g0  := e[QED]/sin(theta[W]);
+  g30 := sqrt(4*Pi*alpha[S]); 
+  lambdat0 := evalf(sqrt(2)*m[t]/Higgs_VEV);
+    
+}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{mu0 := 100;}{%
+\[
+\mu 0 := 100
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{theta[W] := .5001796087;}{%
+\[
+{\theta _{\mathrm{W}}} := .5001796087
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha[QED] := 1/128;}{%
+\[
+{\alpha _{\mathit{QED}}} := {\displaystyle \frac {1}{128}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{alpha[S] := .120;}{%
+\[
+{\alpha _{S}} := .120
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{e[QED] := 1/8*sqrt(2)*sqrt(Pi);}{%
+\[
+{e_{\mathit{QED}}} := {\displaystyle \frac {1}{8}} \,\sqrt{2}\,
+\sqrt{\pi }
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{g10 := .1424507206*sqrt(2)*sqrt(Pi);}{%
+\[
+\mathit{g10} := .1424507206\,\sqrt{2}\,\sqrt{\pi }
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{g0 := .2606430176*sqrt(2)*sqrt(Pi);}{%
+\[
+\mathit{g0} := .2606430176\,\sqrt{2}\,\sqrt{\pi }
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{g30 := .6928203230*sqrt(Pi);}{%
+\[
+\mathit{g30} := .6928203230\,\sqrt{\pi }
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{lambdat0 := .9994036219;}{%
+\[
+\mathit{lambdat0} := .9994036219
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{g1 := mu -> evalf(sqrt(   g10^2/
+                     (1  -  ((20/9)*N[g] +
+1/6)*1/(8*Pi^2)*g10^2*log(mu/mu0))));
+
+g := mu->evalf(sqrt(   g0^2/
+                     (1   - ((4/3)*N[g] -
+43/6)*1/(8*Pi^2)*g0^2*log(mu/mu0))));
+g3 := mu->evalf(sqrt(   g30^2/
+                     (1   - ((4/3)*N[g] -
+11)*1/(8*Pi^2)*g30^2*log(mu/mu0))));
+
+lambda[t] := mu->evalf(sqrt(  lambdat0^2 /
+                       (1   - 2 * C[lambda]*lambdat0^2 *
+log(mu/mu0))));
+}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{g1 := proc (mu) options operator, arrow;
+evalf(sqrt(g10^2/(1-1/8*(20/9*N[g]+1/6)/Pi^2*g10^2*log(mu/mu0)))) end
+proc;}{%
+\[
+\mathit{g1} := \mu \rightarrow \mathrm{evalf} \left(  \! \sqrt{
+{\displaystyle \frac {\mathit{g10}^{2}}{1 - {\displaystyle 
+\frac {1}{8}} \,{\displaystyle \frac {({\displaystyle \frac {20}{
+9}} \,{N_{g}} + {\displaystyle \frac {1}{6}} )\,\mathit{g10}^{2}
+\,\mathrm{log}({\displaystyle \frac {\mu }{\mu 0}} )}{\pi ^{2}}} 
+}} } \!  \right) 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{g := proc (mu) options operator, arrow;
+evalf(sqrt(g0^2/(1-1/8*(4/3*N[g]-43/6)/Pi^2*g0^2*log(mu/mu0)))) end
+proc;}{%
+\[
+g := \mu \rightarrow \mathrm{evalf} \left(  \! \sqrt{
+{\displaystyle \frac {\mathit{g0}^{2}}{1 - {\displaystyle \frac {
+1}{8}} \,{\displaystyle \frac {({\displaystyle \frac {4}{3}} \,{N
+_{g}} - {\displaystyle \frac {43}{6}} )\,\mathit{g0}^{2}\,
+\mathrm{log}({\displaystyle \frac {\mu }{\mu 0}} )}{\pi ^{2}}} }
+} } \!  \right) 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{g3 := proc (mu) options operator, arrow;
+evalf(sqrt(g30^2/(1-1/8*(4/3*N[g]-11)/Pi^2*g30^2*log(mu/mu0)))) end
+proc;}{%
+\[
+\mathit{g3} := \mu \rightarrow \mathrm{evalf} \left(  \! \sqrt{
+{\displaystyle \frac {\mathit{g30}^{2}}{1 - {\displaystyle 
+\frac {1}{8}} \,{\displaystyle \frac {({\displaystyle \frac {4}{3
+}} \,{N_{g}} - 11)\,\mathit{g30}^{2}\,\mathrm{log}(
+{\displaystyle \frac {\mu }{\mu 0}} )}{\pi ^{2}}} }} } \! 
+ \right) 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{lambda[t] := proc (mu) options operator, arrow;
+evalf(sqrt(lambdat0^2/(1-2*C[lambda]*lambdat0^2*log(mu/mu0)))) end
+proc;}{%
+\[
+{\lambda _{t}} := \mu \rightarrow \mathrm{evalf} \left(  \! 
+\sqrt{{\displaystyle \frac {\mathit{lambdat0}^{2}}{1 - 2\,{C_{
+\lambda }}\,\mathit{lambdat0}^{2}\,\mathrm{log}({\displaystyle 
+\frac {\mu }{\mu 0}} )}} } \!  \right) 
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{#
+## we check their values at the GUT scale
+#
+print(evalf(g10));
+print(evalf(((20/9)*N[g] + 1/6)*1/(8*Pi^2)*g10^2*log(10^15/mu0)));
+print("(1) ", evalf(1/(g10^2/(4*Pi))));
+print("(2) ", evalf(1/(g0^2/(4*Pi))));
+print("(3) ", 1/alpha[S]);
+print("e[QED]^2=", evalf(e[QED]^2));
+print("g10^2=", evalf(g10^2));
+print("g0^2=", evalf(g0^2));
+print("g30^2=", evalf(g30^2));
+print("----------------- GUT Scale ------------------");
+print("g1^2 = ",evalf(g1(10^15)^2), evalf(4*Pi/g1(10^15)^2));
+print("g^2 = ",evalf(g(10^15)^2), evalf(4*Pi/g(10^15)^2));
+print("g3^2 = ",evalf( ((g3)(10^15) )^2), evalf(4*Pi/(g3(10^15))^2));
+print("lambda[t] = ", evalf(lambda[t](10^15)));
+print(evalf(2 * C[lambda]*lambdat0^2 * log(mu/mu0)));
+
+ }{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{.3570710039;}{%
+\[
+.3570710039
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{.3303019095;}{%
+\[
+.3303019095
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"(1) ", 98.55999996;}{%
+\[
+\mbox{``(1)~''}, \,98.55999996
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"(2) ", 29.44000000;}{%
+\[
+\mbox{``(2)~''}, \,29.44000000
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"(3) ", 8.333333333;}{%
+\[
+\mbox{``(3)~''}, \,8.333333333
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"e[QED]^2=", .9817477044e-1;}{%
+\[
+\mbox{``e[QED]\symbol{94}2=''}, \,.09817477044
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"g10^2=", .1274997019;}{%
+\[
+\mbox{``g10\symbol{94}2=''}, \,.1274997019
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"g0^2=", .4268468279;}{%
+\[
+\mbox{``g0\symbol{94}2=''}, \,.4268468279
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"g30^2=", 1.507964474;}{%
+\[
+\mbox{``g30\symbol{94}2=''}, \,1.507964474
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"----------------- GUT Scale ------------------";}{%
+\[
+\mbox{``-----------------~GUT~Scale~------------------''}
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"g1^2 = ", .1903838515, 66.00544380;}{%
+\[
+\mbox{``g1\symbol{94}2~=~''}, \,.1903838515, \,66.00544380
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"g^2 = ", .2822238217, 44.52625770;}{%
+\[
+\mbox{``g\symbol{94}2~=~''}, \,.2822238217, \,44.52625770
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"g3^2 = ", .3014826504, 41.68190307;}{%
+\[
+\mbox{``g3\symbol{94}2~=~''}, \,.3014826504, \,41.68190307
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"lambda[t] = ", 1.191137139*I;}{%
+\[
+\mbox{``lambda[t]~=~''}, \,1.191137139\,I
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{.5692520714e-1*ln(.1000000000e-1*mu);}{%
+\[
+.05692520714\,\mathrm{ln}(.01000000000\,\mu )
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{#
+#  In our approximation, all lambda's, except lambda[t] are zero
+#  For the t-quark, we'll calculate the value in the beginning of the
+loop
+lambda[u] := evalm(zmatrix);
+lambda[d] := evalm(zmatrix);
+lambda[e] := evalm(zmatrix);
+print(lambda[u],lambda[d],lambda[e]);
+}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{lambda[u] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\lambda _{u}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{lambda[d] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\lambda _{d}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{lambda[e] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\lambda _{e}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]), matrix([[0, 0, 0], [0, 0,
+0], [0, 0, 0]]), matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\maplemultiline{
+\mathrm{\%1}, \,\mathrm{\%1}, \,\mathrm{\%1} \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{# 
+# The initial value for the eta's
+#
+eta[L] := matrix(3,3,[0,0,0,
+                      0,0,0,
+                      0,0,1]);
+eta[Q] := evalm(zmatrix);
+eta[e] := evalm(zmatrix);
+eta[u] := evalm(zmatrix);
+eta[d] := evalm(zmatrix);
+}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta[L] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 1]]);}{%
+\[
+{\eta _{L}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 1
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta[Q] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\eta _{Q}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta[e] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\eta _{e}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta[u] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\eta _{u}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta[d] := matrix([[0, 0, 0], [0, 0, 0], [0, 0, 0]]);}{%
+\[
+{\eta _{d}} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{1d}{for i from 1 to 1 do
+#
+# Current scale
+# 
+  t[cur] := t[High_scale] - delta_t * (i - 1);
+  mu := evalf(exp(t[cur]));
+  print("current scale is", mu);
+
+# 
+
+#
+# Now we evaluate lambda[u]
+#           
+lambda[u] := matrix(3,3, [0,0,0,
+                          0,0,0,
+                          0,0, lambda[t](mu)]);}{%
+}
+\end{mapleinput}
+
+\begin{center}
+\textit{\textbf{{\large  Evolution of the h operators}}}
+\end{center}
+
+\mapleinline{active}{1d}{#
+# Now we act with the RG matrix
+#   
+   eta10[L] := (A+G)*( g1(mu)^2 * Y[L]^2  + g(mu)^2 * T[W] + g3(mu)^2
+* 0 ) * 
+                      eta[L] +
+               G[H] * (1/2) * ant(lambda[e]&*htranspose(lambda[e]),
+eta[L]) +
+               K * g1(mu)^2 * (-1) * Y[L]^2 * xi1   +
+               K * g(mu)^2 * (-1) * T[W] * xi +        
+               A[H] * (lambda[e] &* eta[e] &* htranspose(lambda[e])) +
+               K[H] * (lambda[e] &* htranspose(lambda[e])) * kappa;   
+    
+
+
+   eta10[Q] := (A+G)*( g1(mu)^2 * Y[Q]^2 + g(mu)^2 * T[W] + g3(mu)^2 *
+T[S] ) *
+                      eta[Q]  +
+               G[H] * (1/2) * ant(lambda[d]&*htranspose(lambda[d]) +
+                                      
+lambda[u]&*htranspose(lambda[u]), eta[Q]) +
+               K * g1(mu)^2 * (-1) * Y[Q]^2 * xi1 + 
+               K * g(mu)^2 * (-1) * T[W] * xi +
+               K * g3(mu)^2 * (-1) * T[S] * xi[3] +
+               A[H] * (lambda[d] &* eta[d] &* htranspose(lambda[d]) + 
+                       lambda[u] &* eta[u] &* htranspose(lambda[u])) +
+               K[H] * (lambda[d] &* htranspose(lambda[d]) -
+                       lambda[u] &* htranspose(lambda[u])) * kappa;
+
+
+   eta10[e] := (A+G)*( g1(mu)^2 * Y[e]^2 ) *  eta[e] +
+               G[H] * (1/2) * ant(2 * htranspose(lambda[e]) &*
+lambda[e],
+                                       eta[e]) +
+               K * g1(mu)^2 * Y[e]^2 * xi1 +
+               A[H] * 2 * htranspose(lambda[e]) * eta[L] * lambda[e] +
+               K[H] * (-1) * 2 * htranspose(lambda[e]) * lambda[e] *
+kappa;
+
+   eta10[u] := (A+G)*( g1(mu)^2 * Y[u]^2  + g3(mu)^2 * T[S] ) * eta[u]
++
+               G[H] * (1/2) * ant(2 * htranspose(lambda[u]) &*
+lambda[u],
+                                       eta[u]) +
+               K * g1(mu)^2 * Y[u]^2 * xi1  +
+               K * g3(mu)^2 * T[S] * xi[3] +
+               A[H] * 2 * htranspose(lambda[u]) &* eta[Q] &* lambda[u]
++
+               K[H] * (-1) * (-1) * 2 * htranspose(lambda[u]) &*
+lambda[u] * kappa;
+
+   eta10[d] := (A+G)*( g1(mu)^2 * Y[d]^2  + g3(mu)^2 * T[S] ) * eta[d]
++
+               G[H] * (1/2) * ant(2 * htranspose(lambda[d]) &*
+lambda[d],
+                                       eta[d]) +
+               K * g1(mu)^2 * Y[d]^2 * xi1  +
+               K * g3(mu)^2 * T[S] * xi[3] +
+               A[H] * 2 * htranspose(lambda[d]) &* eta[Q] &* lambda[d]
++
+               K[H] * (-1) * 2 * htranspose(lambda[d]) &* lambda[d] *
+kappa;
+}{%
+}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{ }{%
+}
+\end{mapleinput}
+
+\begin{center}
+\textit{\textbf{{\large  Evolution of the x operators}}}
+\end{center}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{
+xi110 := (-L) * (1/2) * 2 * (1/2) * g1(mu)^2 *
+           matrix(1,5,[ -2 * Y[L]^2, -2 * N[S] * Y[Q]^2, Y[e]^2, N[S]
+* Y[u]^2, N[S]*Y[d]^2]) &*
+           matrix(5,1,[ Trace(eta[L]), 
+                        Trace(eta[Q]),
+                        Trace(eta[e]),
+                        Trace(eta[u]),
+                        Trace(eta[d]) ])  + 
+         alpha[1] * g1(mu)^2 * xi1;
+xi10 := (-L) * (1/2) * 2 * (1/2) * g(mu)^2 * C[1] * 
+        matrix(1,2, [-1, -N[S]]) &* matrix(2,1, [Trace(eta[L]),
+                                                 Trace(eta[Q])]) +
+        (alpha[2] * g(mu)^2  - 
+                (1/2) * Q[Y] * N[W] * g(mu)^2 * 2 * (1/2)) * xi;
+delta_xi[3] := (-L) * (1/2) * 2 * (1/2) * g3(mu)^2 * C[1] * 
+        matrix(1,3, [-2, 1, 1]) &* 
+          matrix(3,1, [Trace(eta[Q]),
+                       Trace(eta[u]),
+                       Trace(eta[d])]) +
+        (alpha[3] * g3(mu)^2 - 
+                (1/2)*Q[Y]*N[S]*g3(mu)^2* 2 * (1/2)) * xi[3];}{%
+}\textit{\textbf{{\large 
+}}}
+\end{mapleinput}
+
+\begin{center}
+\textit{\textbf{{\large  Evolution of the k operator}}}
+\end{center}
+
+\begin{mapleinput}
+\mapleinline{active}{1d}{delta_kappa := (A[kappa] + G[kappa]) * 
+                  (g1(mu)^2 * Y[H]^2 + g^2 * T[W]) * kappa +
+           (1/2) * F[H] * Trace(
+              lambda[e]&*htranspose(lambda[e])  + 
+              N[S] * lambda[u] &* htranspose(lambda[u]) +
+              N[S] * lambda[d] &* htranspose(lambda[d])) * kappa +
+           (1/2) * L[H] * Trace(
+              N[S] * htranspose(lambda[d]) &* eta[Q] &* lambda[d] +
+                     htranspose(lambda[e]) &* eta[L] &* lambda[e] -
+              N[S] * htranspose(lambda[u]) &* eta[Q] &* lambda[u] -
+              N[S] * lambda[d] &* eta[d] &* htranspose(lambda[d]) -
+                     lambda[e] &* eta[e] &* htranspose(lambda[e]) +
+              N[S] * lambda[u] &* eta[u] &* htranspose(lambda[u]));
+}{%
+}
+\end{mapleinput}
+
+\textit{\textbf{{\large                                               
+     }}}
+
+\emptyline
+\emptyline
+\begin{mapleinput}
+\mapleinline{active}{1d}{od;}{%
+}
+\end{mapleinput}
+
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{t[cur] := 34.53877639;}{%
+\[
+{t_{\mathit{cur}}} := 34.53877639
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{mu := .9999999951e15;}{%
+\[
+\mu  := .9999999951\,10^{15}
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{"current scale is", .9999999951e15;}{%
+\[
+\mbox{``current~scale~is''}, \,.9999999951\,10^{15}
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{lambda[u] := matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+1.191137139*I]]);}{%
+\[
+{\lambda _{u}} :=  \left[ 
+{\begin{array}{rrc}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 1.191137139\,I
+\end{array}}
+ \right] 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta10[L] :=
+(A+G)*(.1903838515*Y[L]^2+.2116678663)*eta[L]+1/32/Pi^2*(`&*`(`&*`(lam
+bda[e],matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]])),eta[L])+`&*`(eta[L],`&*`(lambda[e],matrix([[0, 0, 0], [0, 0, 0],
+[0, 0,
+0]]))))-.1903838515*K*Y[L]^2*xi1-.2116678663*K*xi-1/96*1/Pi^2*`&*`(`&*
+`(lambda[e],eta[e]),matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]))-1/64*1/Pi^2*`&*`(lambda[e],matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]))*kappa;}{%
+\maplemultiline{
+{\eta 10_{L}} := (A + G)\,(.1903838515\,{Y_{L}}^{2} + .2116678663
+)\,{\eta _{L}} \\
+\mbox{} + {\displaystyle \frac {{\displaystyle \frac {1}{32}} \,(
+(({\lambda _{e}}\,\mathrm{\&*}\,\mathrm{\%1})\,\mathrm{\&*}\,{
+\eta _{L}}) + ({\eta _{L}}\,\mathrm{\&*}\,({\lambda _{e}}\,
+\mathrm{\&*}\,\mathrm{\%1})))}{\pi ^{2}}}  - .1903838515\,K\,{Y_{
+L}}^{2}\,\xi 1 \\
+\mbox{} - .2116678663\,K\,\xi  - {\displaystyle \frac {1}{96}} \,
+{\displaystyle \frac {({\lambda _{e}}\,\mathrm{\&*}\,{\eta _{e}})
+\,\mathrm{\&*}\,\mathrm{\%1}}{\pi ^{2}}}  - {\displaystyle 
+\frac {1}{64}} \,{\displaystyle \frac {({\lambda _{e}}\,\mathrm{
+\&*}\,\mathrm{\%1})\,\kappa }{\pi ^{2}}}  \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta10[Q] :=
+(A+G)*(.1903838515*Y[Q]^2+.6136447338)*eta[Q]+1/32/Pi^2*(`&*`(`&*`(lam
+bda[d],matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]))+`&*`(lambda[u],matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+-1.191137139*I]])),eta[Q])+`&*`(eta[Q],`&*`(lambda[d],matrix([[0, 0,
+0], [0, 0, 0], [0, 0, 0]]))+`&*`(lambda[u],matrix([[0, 0, 0], [0, 0,
+0], [0, 0,
+-1.191137139*I]]))))-.1903838515*K*Y[Q]^2*xi1-.2116678663*K*xi-.401976
+8675*K*xi[3]-1/96*1/Pi^2*(`&*`(`&*`(lambda[d],eta[d]),matrix([[0, 0,
+0], [0, 0, 0], [0, 0, 0]]))+`&*`(`&*`(lambda[u],eta[u]),matrix([[0, 0,
+0], [0, 0, 0], [0, 0,
+-1.191137139*I]])))-1/64*1/Pi^2*(`&*`(lambda[d],matrix([[0, 0, 0], [0,
+0, 0], [0, 0, 0]]))-`&*`(lambda[u],matrix([[0, 0, 0], [0, 0, 0], [0,
+0, -1.191137139*I]])))*kappa;}{%
+\maplemultiline{
+{\eta 10_{Q}} := (A + G)\,(.1903838515\,{Y_{Q}}^{2} + .6136447338
+)\,{\eta _{Q}} +  \\
+{\displaystyle \frac {{\displaystyle \frac {1}{32}} \,(((({
+\lambda _{d}}\,\mathrm{\&*}\,\mathrm{\%2}) + ({\lambda _{u}}\,
+\mathrm{\&*}\,\mathrm{\%1}))\,\mathrm{\&*}\,{\eta _{Q}}) + ({\eta
+ _{Q}}\,\mathrm{\&*}\,(({\lambda _{d}}\,\mathrm{\&*}\,\mathrm{\%2
+}) + ({\lambda _{u}}\,\mathrm{\&*}\,\mathrm{\%1}))))}{\pi ^{2}}} 
+ \\
+\mbox{} - .1903838515\,K\,{Y_{Q}}^{2}\,\xi 1 - .2116678663\,K\,
+\xi  - .4019768675\,K\,{\xi _{3}} \\
+\mbox{} - {\displaystyle \frac {1}{96}} \,{\displaystyle \frac {(
+({\lambda _{d}}\,\mathrm{\&*}\,{\eta _{d}})\,\mathrm{\&*}\,
+\mathrm{\%2}) + (({\lambda _{u}}\,\mathrm{\&*}\,{\eta _{u}})\,
+\mathrm{\&*}\,\mathrm{\%1})}{\pi ^{2}}}  \\
+\mbox{} - {\displaystyle \frac {1}{64}} \,{\displaystyle \frac {(
+({\lambda _{d}}\,\mathrm{\&*}\,\mathrm{\%2}) - ({\lambda _{u}}\,
+\mathrm{\&*}\,\mathrm{\%1}))\,\kappa }{\pi ^{2}}}  \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrc}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & -1.191137139\,I
+\end{array}}
+ \right]  \\
+\mathrm{\%2} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta10[e] :=
+.1903838515*(A+G)*Y[e]^2*eta[e]+1/32/Pi^2*(`&*`(`&*`(2*matrix([[0, 0,
+0], [0, 0, 0], [0, 0,
+0]]),lambda[e]),eta[e])+`&*`(eta[e],`&*`(2*matrix([[0, 0, 0], [0, 0,
+0], [0, 0,
+0]]),lambda[e])))+.1903838515*K*Y[e]^2*xi1-1/48*1/Pi^2*matrix([[0, 0,
+0], [0, 0, 0], [0, 0, 0]])*eta[L]*lambda[e]+1/32/Pi^2*matrix([[0, 0,
+0], [0, 0, 0], [0, 0, 0]])*lambda[e]*kappa;}{%
+\maplemultiline{
+{\eta 10_{e}} := .1903838515\,(A + G)\,{Y_{e}}^{2}\,{\eta _{e}}
+ \\
+\mbox{} + {\displaystyle \frac {{\displaystyle \frac {1}{32}} \,(
+(((2\,\mathrm{\%1})\,\mathrm{\&*}\,{\lambda _{e}})\,\mathrm{\&*}
+\,{\eta _{e}}) + ({\eta _{e}}\,\mathrm{\&*}\,((2\,\mathrm{\%1})\,
+\mathrm{\&*}\,{\lambda _{e}})))}{\pi ^{2}}}  + .1903838515\,K\,{Y
+_{e}}^{2}\,\xi 1 \\
+\mbox{} - {\displaystyle \frac {1}{48}} \,{\displaystyle \frac {
+\mathrm{\%1}\,{\eta _{L}}\,{\lambda _{e}}}{\pi ^{2}}}  + 
+{\displaystyle \frac {{\displaystyle \frac {1}{32}} \,\mathrm{\%1
+}\,{\lambda _{e}}\,\kappa }{\pi ^{2}}}  \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta10[u] :=
+(A+G)*(.1903838515*Y[u]^2+.4019768675)*eta[u]+1/32/Pi^2*(`&*`(`&*`(2*m
+atrix([[0, 0, 0], [0, 0, 0], [0, 0,
+-1.191137139*I]]),lambda[u]),eta[u])+`&*`(eta[u],`&*`(2*matrix([[0, 0,
+0], [0, 0, 0], [0, 0,
+-1.191137139*I]]),lambda[u])))+.1903838515*K*Y[u]^2*xi1+.4019768675*K*
+xi[3]+`&*`(`&*`(-1/48/Pi^2*matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+-1.191137139*I]]),eta[Q]),lambda[u])+`&*`(-1/32/Pi^2*matrix([[0, 0,
+0], [0, 0, 0], [0, 0, -1.191137139*I]]),lambda[u])*kappa;}{%
+\maplemultiline{
+{\eta 10_{u}} := (A + G)\,(.1903838515\,{Y_{u}}^{2} + .4019768675
+)\,{\eta _{u}} \\
+\mbox{} + {\displaystyle \frac {{\displaystyle \frac {1}{32}} \,(
+(((2\,\mathrm{\%1})\,\mathrm{\&*}\,{\lambda _{u}})\,\mathrm{\&*}
+\,{\eta _{u}}) + ({\eta _{u}}\,\mathrm{\&*}\,((2\,\mathrm{\%1})\,
+\mathrm{\&*}\,{\lambda _{u}})))}{\pi ^{2}}}  \\
+\mbox{} + .1903838515\,K\,{Y_{u}}^{2}\,\xi 1 + .4019768675\,K\,{
+\xi _{3}} + ((( - {\displaystyle \frac {1}{48}} \,{\displaystyle 
+\frac {\mathrm{\%1}}{\pi ^{2}}} )\,\mathrm{\&*}\,{\eta _{Q}})\,
+\mathrm{\&*}\,{\lambda _{u}}) \\
+\mbox{} + (( - {\displaystyle \frac {1}{32}} \,{\displaystyle 
+\frac {\mathrm{\%1}}{\pi ^{2}}} )\,\mathrm{\&*}\,{\lambda _{u}})
+\,\kappa  \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrc}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & -1.191137139\,I
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{eta10[d] :=
+(A+G)*(.1903838515*Y[d]^2+.4019768675)*eta[d]+1/32/Pi^2*(`&*`(`&*`(2*m
+atrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]),lambda[d]),eta[d])+`&*`(eta[d],`&*`(2*matrix([[0, 0, 0], [0, 0,
+0], [0, 0,
+0]]),lambda[d])))+.1903838515*K*Y[d]^2*xi1+.4019768675*K*xi[3]+`&*`(`&
+*`(-1/48/Pi^2*matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]),eta[Q]),lambda[d])+`&*`(1/32/Pi^2*matrix([[0, 0, 0], [0, 0, 0],
+[0, 0, 0]]),lambda[d])*kappa;}{%
+\maplemultiline{
+{\eta 10_{d}} := (A + G)\,(.1903838515\,{Y_{d}}^{2} + .4019768675
+)\,{\eta _{d}} \\
+\mbox{} + {\displaystyle \frac {{\displaystyle \frac {1}{32}} \,(
+(((2\,\mathrm{\%1})\,\mathrm{\&*}\,{\lambda _{d}})\,\mathrm{\&*}
+\,{\eta _{d}}) + ({\eta _{d}}\,\mathrm{\&*}\,((2\,\mathrm{\%1})\,
+\mathrm{\&*}\,{\lambda _{d}})))}{\pi ^{2}}}  \\
+\mbox{} + .1903838515\,K\,{Y_{d}}^{2}\,\xi 1 + .4019768675\,K\,{
+\xi _{3}} + ((( - {\displaystyle \frac {1}{48}} \,{\displaystyle 
+\frac {\mathrm{\%1}}{\pi ^{2}}} )\,\mathrm{\&*}\,{\eta _{Q}})\,
+\mathrm{\&*}\,{\lambda _{d}}) \\
+\mbox{} + (({\displaystyle \frac {1}{32}} \,{\displaystyle 
+\frac {\mathrm{\%1}}{\pi ^{2}}} )\,\mathrm{\&*}\,{\lambda _{d}})
+\,\kappa  \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{xi110 := `&*`(-.9519192575e-1*L*matrix([[-2*Y[L]^2, -6*Y[Q]^2,
+Y[e]^2, 3*Y[u]^2, 3*Y[d]^2]]),matrix([[Trace(eta[L])],
+[Trace(eta[Q])], [Trace(eta[e])], [Trace(eta[u])],
+[Trace(eta[d])]]))+.1626195398/Pi^2*xi1;}{%
+\maplemultiline{
+\xi 110 :=  \left(  \! ( - .09519192575\,L\, \left[ 
+{\begin{array}{ccccc}
+ - 2\,{Y_{L}}^{2} &  - 6\,{Y_{Q}}^{2} & {Y_{e}}^{2} & 3\,{Y_{u}}
+^{2} & 3\,{Y_{d}}^{2}
+\end{array}}
+ \right] )\,\mathrm{\&*}\, \left[ 
+{\begin{array}{c}
+\mathrm{Trace}({\eta _{L}}) \\
+\mathrm{Trace}({\eta _{Q}}) \\
+\mathrm{Trace}({\eta _{e}}) \\
+\mathrm{Trace}({\eta _{u}}) \\
+\mathrm{Trace}({\eta _{d}})
+\end{array}}
+ \right]  \!  \right)  \\
+\mbox{} + {\displaystyle \frac {.1626195398\,\xi 1}{\pi ^{2}}} 
+ }
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{xi10 := `&*`(-.7055595540e-1*L*matrix([[-1,
+-3]]),matrix([[Trace(eta[L])],
+[Trace(eta[Q])]]))+.3586594401/Pi^2*xi;}{%
+\[
+\xi 10 := (( - .07055595540\,L\, \left[ 
+{\begin{array}{rr}
+-1 & -3
+\end{array}}
+ \right] )\,\mathrm{\&*}\, \left[ 
+{\begin{array}{c}
+\mathrm{Trace}({\eta _{L}}) \\
+\mathrm{Trace}({\eta _{Q}})
+\end{array}}
+ \right] ) + {\displaystyle \frac {.3586594401\,\xi }{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{delta_xi[3] := `&*`(-.7537066265e-1*L*matrix([[-2, 1,
+1]]),matrix([[Trace(eta[Q])], [Trace(eta[u])],
+[Trace(eta[d])]]))+.4899093072/Pi^2*xi[3];}{%
+\[
+{\mathit{delta\_xi}_{3}} :=  \left(  \! ( - .07537066265\,L\,
+ \left[ 
+{\begin{array}{rrr}
+-2 & 1 & 1
+\end{array}}
+ \right] )\,\mathrm{\&*}\, \left[ 
+{\begin{array}{c}
+\mathrm{Trace}({\eta _{Q}}) \\
+\mathrm{Trace}({\eta _{u}}) \\
+\mathrm{Trace}({\eta _{d}})
+\end{array}}
+ \right]  \!  \right)  + {\displaystyle \frac {.4899093072\,{\xi 
+_{3}}}{\pi ^{2}}} 
+\]
+%
+}
+\end{maplelatex}
+
+\begin{maplelatex}
+\mapleinline{inert}{2d}{delta_kappa :=
+5/12/Pi^2*(.1903838515*Y[H]^2+3/4*g^2)*kappa+1/8/Pi^2*Trace(`&*`(lambd
+a[e],matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]))+`&*`(3*lambda[u],matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+-1.191137139*I]]))+`&*`(3*lambda[d],matrix([[0, 0, 0], [0, 0, 0], [0,
+0, 0]])))*kappa-1/12*1/Pi^2*Trace(`&*`(`&*`(3*matrix([[0, 0, 0], [0,
+0, 0], [0, 0, 0]]),eta[Q]),lambda[d])+`&*`(`&*`(matrix([[0, 0, 0], [0,
+0, 0], [0, 0, 0]]),eta[L]),lambda[e])-`&*`(`&*`(3*matrix([[0, 0, 0],
+[0, 0, 0], [0, 0,
+-1.191137139*I]]),eta[Q]),lambda[u])-`&*`(`&*`(3*lambda[d],eta[d]),mat
+rix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]))-`&*`(`&*`(lambda[e],eta[e]),matrix([[0, 0, 0], [0, 0, 0], [0, 0,
+0]]))+`&*`(`&*`(3*lambda[u],eta[u]),matrix([[0, 0, 0], [0, 0, 0], [0,
+0, -1.191137139*I]])));}{%
+\maplemultiline{
+\mathit{delta\_kappa} := {\displaystyle \frac {5}{12}} \,
+{\displaystyle \frac {(.1903838515\,{Y_{H}}^{2} + {\displaystyle 
+\frac {3}{4}} \,g^{2})\,\kappa }{\pi ^{2}}}  \\
+\mbox{} + {\displaystyle \frac {{\displaystyle \frac {1}{8}} \,
+\mathrm{Trace}(({\lambda _{e}}\,\mathrm{\&*}\,\mathrm{\%2}) + ((3
+\,{\lambda _{u}})\,\mathrm{\&*}\,\mathrm{\%1}) + ((3\,{\lambda _{
+d}})\,\mathrm{\&*}\,\mathrm{\%2}))\,\kappa }{\pi ^{2}}}  - 
+{\displaystyle \frac {1}{12}} \mathrm{Trace}( \\
+(((3\,\mathrm{\%2})\,\mathrm{\&*}\,{\eta _{Q}})\,\mathrm{\&*}\,{
+\lambda _{d}}) + ((\mathrm{\%2}\,\mathrm{\&*}\,{\eta _{L}})\,
+\mathrm{\&*}\,{\lambda _{e}}) - (((3\,\mathrm{\%1})\,\mathrm{\&*}
+\,{\eta _{Q}})\,\mathrm{\&*}\,{\lambda _{u}}) \\
+\mbox{} - (((3\,{\lambda _{d}})\,\mathrm{\&*}\,{\eta _{d}})\,
+\mathrm{\&*}\,\mathrm{\%2}) - (({\lambda _{e}}\,\mathrm{\&*}\,{
+\eta _{e}})\,\mathrm{\&*}\,\mathrm{\%2}) + (((3\,{\lambda _{u}})
+\,\mathrm{\&*}\,{\eta _{u}})\,\mathrm{\&*}\,\mathrm{\%1}))
+ \left/ {\vrule height0.43em width0em depth0.43em} \right. \! 
+ \! \pi ^{2} \\
+\mathrm{\%1} :=  \left[ 
+{\begin{array}{rrc}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & -1.191137139\,I
+\end{array}}
+ \right]  \\
+\mathrm{\%2} :=  \left[ 
+{\begin{array}{rrr}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{array}}
+ \right]  }
+%
+}
+\end{maplelatex}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\end{mapleinput}
+
+\end{maplegroup}
+\end{document}
+%% End of Maple 7.00 Output

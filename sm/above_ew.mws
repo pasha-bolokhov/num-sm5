@@ -1,0 +1,474 @@
+{VERSION 5 0 "IBM RISC UNIX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 1 14 0 0 0 0 1 1 1 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+257 "" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 1 14 0 
+0 0 0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 259 "symbol" 1 14 0 0 0 0 1 
+1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 260 "" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 
+0 0 }{CSTYLE "" -1 261 "" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "
+" -1 262 "" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 263 "symbo
+l" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 264 "" 1 14 0 0 0 
+0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 265 "" 1 14 0 0 0 0 1 1 0 0 0 0 
+0 0 0 0 }{CSTYLE "" -1 266 "symbol" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 0 }
+{CSTYLE "" -1 267 "" 1 14 0 0 0 0 1 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+268 "" 1 14 0 0 0 0 1 1 1 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }{PSTYLE "Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier
+" 1 10 0 0 255 1 0 0 0 0 0 1 3 0 3 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 
+}{PSTYLE "Heading 1" 0 3 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 }1 0 0 0 8 4 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 
+{CSTYLE "" -1 -1 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 
+0 0 0 0 0 -1 0 }{PSTYLE "Heading 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 
+0 0 0 1 0 0 0 0 0 0 0 0 0 }0 0 0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "War
+ning" 2 7 1 {CSTYLE "" -1 -1 "" 0 1 0 0 255 1 0 0 0 0 0 0 1 0 0 0 }0 
+0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "
+" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 
+0 -1 0 }{PSTYLE "Title" 0 18 1 {CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 1 
+0 0 0 0 0 0 0 }3 0 0 -1 12 12 0 0 0 0 0 0 19 0 }{PSTYLE "Author" 0 19 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 8 8 0 
+0 0 0 0 0 -1 0 }{PSTYLE "" 0 256 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 257 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 
+0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 258 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 
+259 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 
+-1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 0 260 1 {CSTYLE "" -1 -1 "" 0 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 18 "" 0 "" {TEXT -1 84 "RG Equation for Lorentz\n
+violating operators above\nthe EW symmetry \nrestoration scale" }}
+{PARA 19 "" 0 "" {TEXT -1 12 "P.A.Bolokhov" }{MPLTEXT 1 0 0 "" }}
+{PARA 18 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 23 "restart;\nwith(linalg):\n" }{TEXT -1 80 "Warning, the
+ protected names norm and trace have been redefined and unprotected\n
+" }}{PARA 7 "" 1 "" {TEXT -1 80 "Warning, the protected names norm and
+ trace have been redefined and unprotected\n" }}}{EXCHG {PARA 5 "" 0 "
+" {TEXT -1 111 "Mathematical tricks\nWarning! \nThe definition of \"ht
+ranspose\" should be commented out for the final calculation " }}
+{PARA 5 "> " 0 "" {MPLTEXT 1 0 349 "#Htranspose:=X->htranspose(evalm(X
+));\n#HermTranspose := M -> map(conjugate, transpose(M));\nant := (M,N
+)->M&*N + N&*M;\nunit := matrix(3,3, [1.0,0,0,\n                     0
+,1.0,0,\n                     0,0,1.0]);\nzmatrix := matrix(3,3, [0,0,
+0,0,0,0,0,0,0]);\n## \"calculate\" obtains the final number at each st
+ep\ncalculate := X -> evalf(evalm(evalf(X)));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%$antGf*6$%\"MG%\"NG6\"6$%)operatorG%&arrowGF),&-%#&*G
+6$9$9%\"\"\"-F/6$F2F1F3F)F)F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%un
+itG-%'matrixG6#7%7%$\"#5!\"\"\"\"!F-7%F-F*F-7%F-F-F*" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>%(zmatrixG-%'matrixG6#7%7%\"\"!F*F*F)F)" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%*calculateGf*6#%\"XG6\"6$%)operatorG%&arro
+wGF(-%&evalfG6#-%&evalmG6#-F-6#9$F(F(F(" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{PARA 260 "" 0 "" {TEXT 268 37 "Definition of Div
+ergency Coefficients" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 923 "N[g
+] := 3.0;                    # the number of generations\nN[W] := 2.0;
+                    # N of SU(2)\nN[S] := 3.0;                    # N \+
+of SU(3)\nT[W] := (N[W]^2 - 1.0)/(2.0*N[W]);\nT[S] := (N[S]^2 - 1.0)/(
+2.0*N[S]);\nC[1] := 1.0/2.0;\n\n\n\nA[]       :=   evalf( 19/(48*Pi^2)
+);\nG[]       :=   evalf( 1/(8*Pi^2));\nL[]       := - evalf( 1/(48*Pi
+^2));\nK[]       := - evalf( 5/(48*Pi^2));\nQ[Y]      := - evalf(7/(6*
+Pi^2));\nA[kkappa] :=   evalf(2/(3*Pi^2));\nA[H]      := - evalf( 1/(9
+6*Pi^2));\nK[H]      := - evalf( 1/(64*Pi^2));\nL[H]      := - evalf( \+
+1/(6*Pi^2));\nG[H]      :=   evalf( 1/(16*Pi^2));\nG[kkappa] := - eval
+f( 1/(4*Pi^2));\nF[H]      :=   evalf( 1/(4*Pi^2));\n\nalpha[1] :=    \+
+ evalf(((5/3)*N[g] + 1/8)/(6*Pi^2));\nalpha[2] :=   - evalf((19 - 8*N[
+g])/(48*Pi^2));\nalpha[3] :=   - evalf((5  - (4/3)*N[g])/(8*Pi^2));\n
+\n# beta-function coefficient of the lambda[t-quark]\nC[lambda] := (1/
+2)*(1/2)*F[H]*N[S] + (1/2)*G[H]*(2+1);" }}{PARA 0 "> " 0 "" {MPLTEXT 
+1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"NG6#%\"gG$\"#I!\"\"" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"NG6#%\"WG$\"#?!\"\"" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>&%\"NG6#%\"SG$\"#I!\"\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"TG6#%\"WG$\"+++++v!#5" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"TG6#%\"SG$\"+MLLL8!\"*" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"CG6#\"\"\"$\"+++++]!#5" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"AG6\"$\"+%=I1,%!#6" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>&%\"GG6\"$\"+&z9lE\"!#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%
+\"LG6\"$!+\"*z&36#!#7" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"KG6\"$!+
+'**Ga0\"!#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"QG6#%\"YG$!+w/3#=
+\"!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"AG6#%'kkappaG$\"+ubuan!#
+6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"AG6#%\"HG$!+'**Ga0\"!#7" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"KG6#%\"HG$!+%\\VJe\"!#7" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>&%\"LG6#%\"HG$!+%R'o)o\"!#6" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>&%\"GG6#%\"HG$\"+vRdKj!#7" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"GG6#%'kkappaG$!+!fHI`#!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"FG6#%\"HG$\"+!fHI`#!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%&alphaG6#\"\"\"$\"+mx^a')!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%&alphaG6#\"\"#$\"+'**Ga0\"!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%&alphaG6#\"\"$$!+&z9lE\"!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"CG6#%'lambdaG$\"+)Ge'\\G!#6" }}}{EXCHG {PARA 5 "" 
+0 "" {TEXT -1 32 "Hypercharges of the SM particles" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 129 "Y[L] := - evalf(1/2);\nY[Q] :=   evalf(1/6
+);\nY[e] := - evalf(1);\nY[u] :=   evalf(2/3);\nY[d] := - evalf(1/3);
+\nY[H] :=   evalf(1/2);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"YG6#%
+\"LG$!+++++]!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"YG6#%\"QG$\"+n
+mmm;!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"YG6#%\"eG$!\"\"\"\"!" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"YG6#%\"uG$\"+nmmmm!#5" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>&%\"YG6#%\"dG$!+LLLLL!#5" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>&%\"YG6#%\"HG$\"+++++]!#5" }}}{PARA 3 "" 0 "" {TEXT 
+-1 0 "" }}{EXCHG {PARA 256 "" 0 "" {TEXT 256 22 "Main Cycle starts her
+e" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "NN := 30;    # the number of i
+ntervals" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#NNG\"#I" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 315 "Lambda[High_scale] := 10^15; # GeV
+, new physics scale\nt[High_scale] := evalf(log(Lambda[High_scale]));
+\nLambda[EW] := 100.0;         # GeV, the scale of the EW symmetry\nm[
+t] := 174.0;               # GeV, the mass of the t-quark\nHiggs_VEV :
+= 246.22;\nt[EW] := log(Lambda[EW]);\ndelta_t := (t[High_scale] - t[EW
+]) / NN;" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }{XPPMATH 20 "6#>%+Hig
+h_scaleG\",+++++\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'LambdaG6#%+H
+igh_scaleG\"1+++++++5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"tG6#%+Hi
+gh_scaleG$\"+Rw(QX$!\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'LambdaG
+6#%#EWG$\"%+5!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"mG6#%\"tG$
+\"%S<!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*Higgs_VEVG$\"&AY#!\"#
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"tG6#%#EWG$\"+'=q^g%!\"*" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(delta_tG$\"+L(oy(**!#5" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "eta[L] := matrix(3,3);\n" }
+{XPPMATH 20 "6#>&%$etaG6#%\"LG-%&arrayG6%;\"\"\"\"\"$F+7\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>&%$etaG6#%\"LG-%&arrayG6%;\"\"\"\"\"$F+7\"
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 385 "#\n# first we need to \+
+determine all couplings\n#\n# Gauge couplings\n#\n# first we set them \+
+at the EW scale\n#\n  mu0 := Lambda[EW];\n  theta[W] := arcsin(sqrt(0.
+23));\n  alpha[QED] := 1/128;\n  alpha[S] := 0.120; \n  e[QED] := sqrt
+(4*Pi*alpha[QED]);\n  g10 := e[QED]/cos(theta[W]);\n  g0  := e[QED]/si
+n(theta[W]);\n  g30 := sqrt(4*Pi*alpha[S]); \n  lambda[t0] := evalf(sq
+rt(2)*m[t]/Higgs_VEV);\n    \n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$m
+u0G$\"%+5!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&thetaG6#%\"WG$\"
++(3'z,]!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&alphaG6#%$QEDG#\"\"
+\"\"$G\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&alphaG6#%\"SG$\"$?\"!
+\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"eG6#%$QEDG,$*&-%%sqrtG6#\"
+\"#\"\"\"-F+6#%#PiGF.#F.\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$g1
+0G,$*&-%%sqrtG6#\"\"#\"\"\"-F(6#%#PiGF+$\"+1s]C9!#5" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%#g0G,$*&-%%sqrtG6#\"\"#\"\"\"-F(6#%#PiGF+$\"+w,V1E!
+#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$g30G,$*$-%%sqrtG6#%#PiG\"\"\"
+$\"+IK?Gp!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#%#t0G$\"+
+>i.%***!#5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 989 "g1 := mu -> \+
+evalf(sqrt(   g10^2/\n                 (1  -  ((20/9)*N[g] + 1/6)*1/(8
+*Pi^2)*g10^2*log(mu/mu0))));\n\ng := mu -> evalf(sqrt(   g0^2/\n      \+
+           (1   - ((4/3)*N[g] - 43/6)*1/(8*Pi^2)*g0^2*log(mu/mu0))));
+\ng3 := mu -> evalf(sqrt(   g30^2/\n                 (1   - ((4/3)*N[g
+] - 11)*1/(8*Pi^2)*g30^2*log(mu/mu0))));\n\n# This is the running of l
+ambda_t, the solution of the RG equation\n# respecing the running of t
+he strong coupling\na[SM] := 9/(32*Pi^2);\nb[SM] := - 1/(2*Pi^2);\nbet
+a[0,SM] := -7/(16*Pi^2);\nlambda[t] := nu -> evalf( \n                \+
+  sqrt (   ( ( beta[0,SM] - b[SM] ) / a[SM] ) * \n                    \+
+ \n                   g3(nu)^2 / \n\n             ( 1   -   ( g3(nu)^2
+ / g30^2 )^( ( beta[0,SM] - b[SM] ) / beta[0,SM] )  *\n\n             \+
+    ( 1 - ( ( beta[0,SM] - b[SM] ) / a[SM] ) * (g30^2 / lambda[t0]^2) \+
+) ) )\n                     );\n     \n## lambda[t] := mu->evalf(sqrt(
+  lambdat0^2 /\n##                        (1   - 2 * C[lambda]*lambdat
+0^2 * log(mu/mu0))));\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#g1Gf*6#%
+#muG6\"6$%)operatorG%&arrowGF(-%&evalfG6#-%%sqrtG6#*&%$g10G\"\"#,&\"\"
+\"F6*&#F6\"\")F6**,&&%\"NG6#%\"gG#\"#?\"\"*#F6\"\"'F6F6%#PiG!\"#F3F4-%
+$logG6#*&9$F6%$mu0G!\"\"F6F6FMFMF(F(F(" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%\"gGf*6#%#muG6\"6$%)operatorG%&arrowGF(-%&evalfG6#-%%sqrtG6#*&
+%#g0G\"\"#,&\"\"\"F6*&#F6\"\")F6**,&&%\"NG6#F$#\"\"%\"\"$#\"#V\"\"'!\"
+\"F6%#PiG!\"#F3F4-%$logG6#*&9$F6%$mu0GFEF6F6FEFEF(F(F(" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%#g3Gf*6#%#muG6\"6$%)operatorG%&arrowGF(-%&evalfG
+6#-%%sqrtG6#*&%$g30G\"\"#,&\"\"\"F6*&#F6\"\")F6**,&&%\"NG6#%\"gG#\"\"%
+\"\"$\"#6!\"\"F6%#PiG!\"#F3F4-%$logG6#*&9$F6%$mu0GFDF6F6FDFDF(F(F(" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#%#SMG,$*&\"\"\"F**$)%#PiG\"\"
+#F*!\"\"#\"\"*\"#K" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"bG6#%#SMG,$
+*&\"\"\"F**$)%#PiG\"\"#F*!\"\"#F/F." }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>&%%betaG6$\"\"!%#SMG,$*&\"\"\"F+*$)%#PiG\"\"#F+!\"\"#!\"(\"#;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#%\"tGf*6#%#nuG6\"6$%)oper
+atorG%&arrowGF+-%&evalfG6#-%%sqrtG6#**,&&%%betaG6$\"\"!%#SMG\"\"\"&%\"
+bG6#F;!\"\"F<&%\"aGF?F@-%#g3G6#9$\"\"#,&F<F<*&)*&FCFG%$g30G!\"#*&F6F<F
+7F@F<,&F<F<**F6F<FAF@FLFG&F%6#%#t0GFMF@F<F@F@F+F+F+" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 779 "#\n## we check their values at the GUT s
+cale\n#\nprint(evalf(g10));\nprint(evalf(((20/9)*N[g] + 1/6)*1/(8*Pi^2
+)*g10^2*log(10^15/mu0)));\nprint(\"(1) \", evalf(1/(g10^2/(4*Pi))));\n
+print(\"(2) \", evalf(1/(g0^2/(4*Pi))));\nprint(\"(3) \", 1/alpha[S]);
+\nprint(\"e[QED]^2=\", evalf(e[QED]^2));\nprint(\"g10^2=\", evalf(g10^
+2));\nprint(\"g0^2=\", evalf(g0^2));\nprint(\"g30^2=\", evalf(g30^2));
+\nprint(\"----------------- GUT Scale ------------------\");\nprint(\"
+g1^2 = \",evalf(g1(10^15)^2), evalf(4*Pi/g1(10^15)^2));\nprint(\"g^2 =
+ \",evalf(g(10^15)^2), evalf(4*Pi/g(10^15)^2));\nprint(\"g3^2 = \",eva
+lf( ((g3)(10^15) )^2), evalf(4*Pi/(g3(10^15))^2));\nprint(\"lambda[t] \+
+= \", evalf(lambda[t](10^15)));\nprint(evalf(2 * C[lambda]*lambda[t0]^
+2 * log(mu/mu0)));                # this formula leads to the Landau p
+ole\n    \n " }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+R+rqN!#5" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#$\"+$4>II$!#5" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6$Q%(1)~6\"$\"+'****f&)*!\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q%
+(2)~6\"$\"++++WH!\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q%(3)~6\"$\"+L
+LLL$)!\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q*e[QED]^2=6\"$\"+WqZ<)*!
+#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q'g10^2=6\"$\"+>q*\\F\"!#5" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$Q&g0^2=6\"$\"+z#o%oU!#5" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$Q'g30^2=6\"$\"+uW'z]\"!\"*" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#QO-----------------~GUT~Scale~------------------6\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6%Q(g1^2~=~6\"$\"+:&QQ!>!#5$\"+!QW0g'!\"
+)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%Q'g^2~=~6\"$\"+<#QA#G!#5$\"+qdi_W
+!\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%Q(g3^2~=~6\"$\"+/l#[,$!#5$\"+2
+.>oT!\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q-lambda[t]~=~6\"$\"+HMf(R
+'!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#,$-%#lnG6#,$%#muG$\"+++++5!#6$
+\"+32_#p&F+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 267 "#\n#  In ou
+r approximation, all lambda's, except lambda[t] are zero\n#  For the t
+-quark, we'll calculate the value in the beginning of the loop\nlambda
+[u] := evalm(zmatrix);\nlambda[d] := evalm(zmatrix);\nlambda[e] := eva
+lm(zmatrix);\nprint(lambda[u],lambda[d],lambda[e]);\n" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>&%'lambdaG6#%\"uG-%'matrixG6#7%7%\"\"!F-F-F,F," }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#%\"dG-%'matrixG6#7%7%\"
+\"!F-F-F,F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#%\"eG-%'ma
+trixG6#7%7%\"\"!F-F-F,F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6%-%'matrixG
+6#7%7%\"\"!F(F(F'F'F#F#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 291 
+"# \n# The initial value for the LV operators\n#\neta[L] := matrix(3,3
+,[0,0,0,\n                      0,0,0,\n                      0,0,1.0]
+);\neta[Q] := evalm(zmatrix);\neta[e] := evalm(zmatrix);\neta[u] := ev
+alm(zmatrix);\neta[d] := evalm(zmatrix);\nxi1    := 0;\nxi     := 0;\n
+xi3  := 0;\nkappa  := 0;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%$etaG
+6#%\"LG-%'matrixG6#7%7%\"\"!F-F-F,7%F-F-$\"#5!\"\"" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>&%$etaG6#%\"QG-%'matrixG6#7%7%\"\"!F-F-F,F," }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%$etaG6#%\"eG-%'matrixG6#7%7%\"\"!F-
+F-F,F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%$etaG6#%\"uG-%'matrixG6#7
+%7%\"\"!F-F-F,F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%$etaG6#%\"dG-%'
+matrixG6#7%7%\"\"!F-F-F,F," }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$xi1G
+\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#xiG\"\"!" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>%$xi3G\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&k
+appaG\"\"!" }}}{EXCHG {PARA 11 "" 1 "" {TEXT -1 0 "" }}}{EXCHG {PARA 
+5 "" 0 "" {TEXT -1 39 "The modified values of the LV operators" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 125 "eta10[L] := matrix(3,3);\ne
+ta10[Q] := matrix(3,3);\neta10[u] := matrix(3,3);\neta10[d] := matrix(
+3,3);\neta10[e] := matrix(3,3);\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+&%&eta10G6#%\"LG-%&arrayG6%;\"\"\"\"\"$F+7\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%&eta10G6#%\"QG-%&arrayG6%;\"\"\"\"\"$F+7\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>&%&eta10G6#%\"uG-%&arrayG6%;\"\"\"\"\"$F+7
+\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&eta10G6#%\"dG-%&arrayG6%;\"
+\"\"\"\"$F+7\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%&eta10G6#%\"eG-%&
+arrayG6%;\"\"\"\"\"$F+7\"" }}}{EXCHG {PARA 5 "" 0 "" {TEXT -1 40 "The \+
+overall substitution we have to make" }{MPLTEXT 1 0 106 "\n#subs_total
+ := subs_divergencies, subs_hypercharges, subs_scales, subs_initial_co
+uplings, subs_couplings;" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 312 "for i from 1 to NN do
+\n#\n# Current scale\n# \n  t[cur] := t[High_scale] - delta_t * (i - 1
+);\n  mu := evalf(exp(t[cur]));\n  print(\"current scale is\", mu);\n
+\n# \n\n#\n# Now we evaluate lambda[u]\n#           \nlambda[u] := mat
+rix(3,3, [0,0,0,\n                          0,0,0,\n                  \+
+        0,0, lambda[t](mu)]);" }}{PARA 257 "" 0 "" {TEXT 257 18 " Evol
+ution of the " }{TEXT 259 1 "h" }{TEXT 258 10 " operators" }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }{MPLTEXT 1 0 2678 "  #\n  # Now we act with the \+
+RG matrix\n  #   \n   eta10[L] := calculate(\n               (A[]+G[])
+*( g1(mu)^2 * Y[L]^2  + g(mu)^2 * T[W] + g3(mu)^2 * 0 ) * \n          \+
+            eta[L] +\n               G[H] * (1/2) * ant(lambda[e]&*htr
+anspose(lambda[e]), eta[L]) +\n               K[] * g1(mu)^2 * (-1) * \+
+Y[L]^2 * xi1   +\n               K[] * g(mu)^2 * (-1) * T[W] * xi +   \+
+     \n               A[H] * (lambda[e] &* eta[e] &* htranspose(lambda
+[e])) +\n               K[H] * (lambda[e] &* htranspose(lambda[e])) * \+
+kappa\n               );\n\n\n   eta10[Q] := calculate(\n             \+
+  (A[]+G[])*( g1(mu)^2 * Y[Q]^2 + g(mu)^2 * T[W] + g3(mu)^2 * T[S] ) *
+\n                      eta[Q]  +\n               G[H] * (1/2) * ant(l
+ambda[d]&*htranspose(lambda[d]) +\n                                   \+
+    lambda[u]&*htranspose(lambda[u]), eta[Q]) +\n               K[] * \+
+g1(mu)^2 * (-1) * Y[Q]^2 * xi1 + \n               K[] * g(mu)^2 * (-1)
+ * T[W] * xi +\n               K[] * g3(mu)^2 * (-1) * T[S] * xi3 +\n \+
+              A[H] * (lambda[d] &* eta[d] &* htranspose(lambda[d]) + \+
+\n                       lambda[u] &* eta[u] &* htranspose(lambda[u]))
+ +\n               K[H] * (lambda[d] &* htranspose(lambda[d]) -\n     \+
+                  lambda[u] &* htranspose(lambda[u])) * kappa\n       \+
+        );\n\n\n   eta10[e] := calculate(\n               (A[]+G[])*( \+
+g1(mu)^2 * Y[e]^2 ) *  eta[e] +\n               G[H] * (1/2) * ant(2 *
+ htranspose(lambda[e]) &* lambda[e],\n                                \+
+       eta[e]) +\n               K[] * g1(mu)^2 * Y[e]^2 * xi1 +\n    \+
+           A[H] * 2 * htranspose(lambda[e]) &* eta[L] &* lambda[e] +\n
+               K[H] * (-1) * 2 * htranspose(lambda[e]) &* lambda[e] * \+
+kappa\n               );\n\n   eta10[u] := calculate(\n               \+
+(A[]+G[])*( g1(mu)^2 * Y[u]^2  + g3(mu)^2 * T[S] ) * eta[u] +\n       \+
+        G[H] * (1/2) * ant(2 * htranspose(lambda[u]) &* lambda[u],\n  \+
+                                     eta[u]) +\n               K[] * g
+1(mu)^2 * Y[u]^2 * xi1  +\n               K[] * g3(mu)^2 * T[S] * xi3 \+
++\n               A[H] * 2 * htranspose(lambda[u]) &* eta[Q] &* lambda
+[u] +\n               K[H] * (-1) * (-1) * 2 * htranspose(lambda[u]) &
+* lambda[u] * kappa\n               );\n\n   eta10[d] := calculate(\n \+
+              (A[]+G[])*( g1(mu)^2 * Y[d]^2  + g3(mu)^2 * T[S] ) * eta
+[d] +\n               G[H] * (1/2) * ant(2 * htranspose(lambda[d]) &* \+
+lambda[d],\n                                       eta[d]) +\n        \+
+       K[] * g1(mu)^2 * Y[d]^2 * xi1  +\n               K[] * g3(mu)^2
+ * T[S] * xi3 +\n               A[H] * 2 * htranspose(lambda[d]) &* et
+a[Q] &* lambda[d] +\n               K[H] * (-1) * 2 * htranspose(lambd
+a[d]) &* lambda[d] * kappa\n               );\n" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 1 " " }}{PARA 258 "" 0 "" {TEXT 261 18 " Evolution of the
+ " }{TEXT 263 1 "x" }{TEXT 262 10 " operators" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 1111 "\ndelta_xi1 := calculate(\n             (-L[]) * (1
+/2) * 2 * (1/2) * g1(mu)^2 *\n           matrix(1,5,[ -2 * Y[L]^2, -2 \+
+* N[S] * Y[Q]^2, Y[e]^2, N[S] * Y[u]^2, N[S]*Y[d]^2]) &*\n           m
+atrix(5,1,[ trace(eta[L]), \n                        trace(eta[Q]),\n \+
+                       trace(eta[e]),\n                        trace(e
+ta[u]),\n                        trace(eta[d]) ])  + \n         alpha[
+1] * g1(mu)^2 * xi1\n             )[1,1];\n\ndelta_xi := calculate(\n \+
+           (-L[]) * (1/2) * 2 * (1/2) * g(mu)^2 * C[1] * \n        mat
+rix(1,2, [-1, -N[S]]) &* matrix(2,1, [trace(eta[L]),\n                \+
+                                 trace(eta[Q])]) +\n        (alpha[2] \+
+* g(mu)^2  - \n                (1/2) * Q[Y] * N[W] * g(mu)^2 * 2 * (1/
+2)) * xi\n            )[1,1];\n\ndelta_xi3 := calculate(\n            \+
+(-L[]) * (1/2) * 2 * (1/2) * g3(mu)^2 * C[1] * \n        matrix(1,3, [
+-2, 1, 1]) &* \n          matrix(3,1, [trace(eta[Q]),\n               \+
+        trace(eta[u]),\n                       trace(eta[d])]) +\n    \+
+    (alpha[3] * g3(mu)^2 - \n                (1/2)*Q[Y]*N[S]*g3(mu)^2*
+ 2 * (1/2)) * xi3\n            )[1,1];" }{TEXT 260 1 "\n" }}{PARA 259 
+"" 0 "" {TEXT 264 18 " Evolution of the " }{TEXT 266 1 "k" }{TEXT 265 
+9 " operator" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 1627 "delta_kappa :=  c
+alculate(\n             (A[kkappa] + G[kkappa]) * \n                  \+
+(g1(mu)^2 * Y[H]^2 + g(mu)^2 * T[W]) * kappa +\n           (1/2) * F[H
+] * trace(\n              lambda[e] &* htranspose(lambda[e])  + \n    \+
+          N[S] * lambda[u] &* htranspose(lambda[u]) +\n              N
+[S] * lambda[d] &* htranspose(lambda[d])) * kappa +\n           (1/2) \+
+* L[H] * trace(\n              N[S] * htranspose(lambda[d]) &* eta[Q] \+
+&* lambda[d] +\n                     htranspose(lambda[e]) &* eta[L] &
+* lambda[e] -\n              N[S] * htranspose(lambda[u]) &* eta[Q] &*
+ lambda[u] -\n              N[S] * lambda[d] &* eta[d] &* htranspose(l
+ambda[d]) -\n                     lambda[e] &* eta[e] &* htranspose(la
+mbda[e]) +\n              N[S] * lambda[u] &* eta[u] &* htranspose(lam
+bda[u])\n                               )\n              );        \n
+\n## Remember the values at the previous step\nold_eta[L] := evalf(eta
+[L]);\nold_eta[Q] := evalf(eta[Q]);\nold_eta[e] := evalf(eta[e]);\nold
+_eta[u] := evalf(eta[u]);\nold_eta[d] := evalf(eta[d]);\nold_xi1    :=
+ evalf(xi1);\nold_xi     := evalf(xi);\nold_xi3    := evalf(xi3);\nold
+_kappa  := evalf(kappa);\n\n## Now shift the evaluated matrices\n\neta
+[L] := calculate(eta[L] - delta_t * eta10[L]);\neta[Q] := calculate(et
+a[Q] - delta_t * eta10[Q]);\neta[e] := calculate(eta[e] - delta_t * et
+a10[e]);\neta[u] := calculate(eta[u] - delta_t * eta10[u]);\neta[d] :=
+ calculate(eta[d] - delta_t * eta10[d]);\nxi1    := calculate(xi1    -
+ delta_t * delta_xi1);\nxi     := calculate(xi     - delta_t * delta_x
+i);\nxi3    := calculate(xi3    - delta_t * delta_xi3);\nkappa  := cal
+culate(kappa  - delta_t * delta_kappa);" }}{PARA 0 "" 0 "" {TEXT 267 
+40 "  \n                                     " }{TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 3 "od:" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+^********\"\"
+&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+g]%po$\"
+\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+!Qc$f8
+\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+;B(=
+,&\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+(z
+\\y%=\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"
++X1#H\"o\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"
+$\"+Ck)=^#\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6
+\"$\"+'G(=h#*\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~
+is6\"$\"+a)[XT$\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scal
+e~is6\"$\"+4a#*e7\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~sc
+ale~is6\"$\"+S))eTY\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current
+~scale~is6\"$\"+'HG8r\"\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1cur
+rent~scale~is6\"$\"+OMd4j\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1cu
+rrent~scale~is6\"$\"+s]IEB\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1c
+urrent~scale~is6\"$\"+^*epd)!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q
+1current~scale~is6\"$\"+fwFiJ!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$
+Q1current~scale~is6\"$\"+0W\"f;\"!\"\"" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6$Q1current~scale~is6\"$\"+LBm)H%!\"#" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$Q1current~scale~is6\"$\"+$>$*[e\"!\"#" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+eTTVe!\"$" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+&oMW:#!\"$" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+eBGVz!\"%" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+zXkGH!\"%" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+h^xz5!\"%" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+9<2\")R!\"&" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+w#*zn9!\"&" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+j_p6a!\"'" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+@BE&*>!\"'" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+%fAkN(!\"(" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6$Q1current~scale~is6\"$\"+!esAr#!\"(" }
+}}{EXCHG {PARA 5 "" 0 "" {TEXT -1 24 "Now we print the results" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 1599 "print(\"The final energy i
+s\", evalf(exp(t[cur] - delta_t)));\nprint(\"eta[L] \", eta[L]);\nprin
+t(\"eta[Q] \", eta[Q]);\nprint(\"eta[e] \", eta[e]);\nprint(\"eta[u] \+
+\", eta[u]);\nprint(\"eta[d] \", eta[d]);\nprint(\"xi1 \", xi1);\nprin
+t(\"xi \", xi);\nprint(\"xi3 \", xi3);\nprint(\"kappa \", kappa);\npri
+nt(\"===========================================================\");\n
+pr_eta[L] := zmatrix:\npr_eta[Q] := zmatrix:\npr_eta[e] := zmatrix:\np
+r_eta[u] := zmatrix:\npr_eta[d] := zmatrix:\nfor i from 1 to 3 do\nfor
+ j from 1 to 3 do\n    if eta[L][i,j] != 0 then\n       pr_eta[L][i,j]
+ := evalf( ( eta[L][i,j] - old_eta[L][i,j] ) / eta[L][i,j] );\n    fi;
+\n    if eta[L][i,j] != 0 then\n       pr_eta[Q][i,j] := evalf( ( eta[
+Q][i,j] - old_eta[Q][i,j] ) / eta[Q][i,j] );\n    fi;\n    if eta[L][i
+,j] != 0 then\n       pr_eta[e][i,j] := evalf( ( eta[e][i,j] - old_eta
+[e][i,j] ) / eta[e][i,j] );\n    fi;\n    if eta[L][i,j] != 0 then\n  \+
+     pr_eta[u][i,j] := evalf( ( eta[u][i,j] - old_eta[u][i,j] ) / eta[
+u][i,j] );\n    fi;\n    if eta[L][i,j] != 0 then\n       pr_eta[d][i,
+j] := evalf( ( eta[d][i,j] - old_eta[d][i,j] ) / eta[d][i,j] );\n    f
+i;\nod:\nod:\nprint(\"precision of eta[L] = \", pr_eta[L]);\nprint(\"p
+recision of eta[Q] = \", pr_eta[Q]);\nprint(\"precision of eta[e] = \"
+, pr_eta[e]);\nprint(\"precision of eta[u] = \", pr_eta[u]);\nprint(\"
+precision of eta[d] = \", pr_eta[d]);\nprint(\"precision of xi1   = \"
+, evalf(( xi1   - old_xi1  ) / xi1  ));\nprint(\"precision of xi    = \+
+\", evalf(( xi    - old_xi   ) / xi   ));\nprint(\"precision of xi3   \+
+= \", evalf(( xi3   - old_xi3  ) / xi3  ));  \nprint(\"precision of ka
+ppa = \", evalf(( kappa - old_kappa) / kappa));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$Q4The~final~energy~is6\"$\"+,+++5!\"(" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6$Q(eta[L]~6\"-%'matrixG6#7%7%$!+!\\+_:\"!#8$\"\"!F.F-
+7%F-F*F-7%F-F-$\"+I%fYC'!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q(eta[Q
+]~6\"-%'matrixG6#7%7%$!+@j+=l!#9$\"\"!F.F-7%F-F*F-7%F-F-$!+/X%yI'F," }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q(eta[e]~6\"-%'matrixG6#7%7%$\"+(fwfB
+%!#9$\"\"!F.F-7%F-F*F-7%F-F-F*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q(et
+a[u]~6\"-%'matrixG6#7%7%$\"+AiB#4\"!#9$\"\"!F.F-7%F-F*F-7%F-F-$\"+JP-T
+&*!#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q(eta[d]~6\"-%'matrixG6#7%7%$
+\"+\\<RJF!#:$\"\"!F.F-7%F-F*F-7%F-F-F*" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6$Q%xi1~6\"$\"+k'=el\"!#7" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q$xi~
+6\"$\"+-4a0B!#7" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q%xi3~6\"$!+]Lq(4\"
+!#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q'kappa~6\"$\"+EkNW7!#9" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#Qfn===================================
+========================6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q7preci
+sion~of~eta[L]~=~6\"-%'matrixG6#7%7%\"\"!F*F*F)F)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$Q7precision~of~eta[Q]~=~6\"-%'matrixG6#7%7%\"\"!F*F*F)F
+)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q7precision~of~eta[e]~=~6\"-%'mat
+rixG6#7%7%\"\"!F*F*F)F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q7precision
+~of~eta[u]~=~6\"-%'matrixG6#7%7%\"\"!F*F*F)F)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$Q7precision~of~eta[d]~=~6\"-%'matrixG6#7%7%\"\"!F*F*F)F
+)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q6precision~of~xi1~~~=~6\"$\"+(RZ
+(3:!#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q6precision~of~xi~~~~=~6\"$
+\"+`K>qt!#7" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q6precision~of~xi3~~~=~
+6\"$\"+xy(Gn'!#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q6precision~of~kap
+pa~=~6\"$\"+%)R^f*)!#6" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "0 0 0" 0 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

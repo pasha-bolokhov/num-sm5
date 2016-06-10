@@ -1,0 +1,156 @@
+{VERSION 5 0 "IBM RISC UNIX" "5.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "Heading 1" 0 3 1 
+{CSTYLE "" -1 -1 "" 1 18 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }1 0 0 0 8 4 0 0 
+0 0 0 0 -1 0 }{PSTYLE "Heading 2" 3 4 1 {CSTYLE "" -1 -1 "" 1 14 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 8 2 0 0 0 0 0 0 -1 0 }{PSTYLE "Headi
+ng 3" 4 5 1 {CSTYLE "" -1 -1 "" 1 12 0 0 0 0 1 0 0 0 0 0 0 0 0 0 }0 0 
+0 -1 0 0 0 0 0 0 0 0 -1 0 }{PSTYLE "Maple Output" 0 11 1 {CSTYLE "" 
+-1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 0 0 0 0 0 0 
+-1 0 }{PSTYLE "Maple Plot" 0 13 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }{PSTYLE "" 3 256 1 
+{CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 0 0 -1 -1 -1 0 
+0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart:" }{TEXT -1 
+0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 
+256 "" 0 "" {TEXT -1 65 "Top-quark Yukawa RG running due to itself and
+ strong interactions" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 5 "" 0 "" 
+{TEXT -1 79 "The constants which emerge in the RG equation for the top
+-quark Yukawa coupling" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 93 "a
+[SM] := 9/(32*Pi^2);\nb[SM] := - 1/(2*Pi^2);\na[MSSM] := 6/(16*Pi^2);
+\nb[MSSM] := - 1/(3*Pi^2);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6
+#%#SMG,$*&\"\"\"F**$)%#PiG\"\"#F*!\"\"#\"\"*\"#K" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"bG6#%#SMG,$*&\"\"\"F**$)%#PiG\"\"#F*!\"\"#F/F." }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#%%MSSMG,$*&\"\"\"F**$)%#PiG\"
+\"#F*!\"\"#\"\"$\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"bG6#%%MS
+SMG,$*&\"\"\"F**$)%#PiG\"\"#F*!\"\"#F/\"\"$" }}}{EXCHG {PARA 5 "" 0 "
+" {TEXT -1 73 "The constants which determine the running of the strong
+ coupling constant" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 134 "mu[0
+] := 100;                # GeV\ng[30] := sqrt(4*Pi*0.12);    # at 100 \+
+GeV\nbeta[0,SM] := -7/(16*Pi^2);\nbeta[0,MSSM] := -3/(16*Pi^2);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%#muG6#\"\"!\"$+\"" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#>&%\"gG6#\"#I,$*$-%%sqrtG6#%#PiG\"\"\"$\"+IK?Gp!#5" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%%betaG6$\"\"!%#SMG,$*&\"\"\"F+*$)
+%#PiG\"\"#F+!\"\"#!\"(\"#;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%%beta
+G6$\"\"!%%MSSMG,$*&\"\"\"F+*$)%#PiG\"\"#F+!\"\"#!\"$\"#;" }}}{EXCHG 
+{PARA 5 "" 0 "" {TEXT -1 27 "The strong running coupling" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 91 "g[3,SM] := nu -> sqrt( g[30]^2 / ( \+
+1   -   2 * beta[0,SM] * g[30]^2 * log (nu / mu[0]) ) );" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>&%\"gG6$\"\"$%#SMGf*6#%#nuG6\"6$%)operatorG%&ar
+rowGF,-%%sqrtG6#*&&F%6#\"#I\"\"#,&\"\"\"F9**F7F9&%%betaG6$\"\"!F(F9)F4
+F7F9-%$logG6#*&9$F9&%#muG6#F>!\"\"F9FHFHF,F,F," }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 95 "g[3,MSSM] := nu -> sqrt( g[30]^2 / ( 1   -   2
+ * beta[0,MSSM] * g[30]^2 * log (nu / mu[0]) ) );" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"gG6$\"\"$%%MSSMGf*6#%#nuG6\"6$%)operatorG%&arrowGF
+,-%%sqrtG6#*&&F%6#\"#I\"\"#,&\"\"\"F9**F7F9&%%betaG6$\"\"!F(F9)F4F7F9-
+%$logG6#*&9$F9&%#muG6#F>!\"\"F9FHFHF,F,F," }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 5 "" 0 "" {TEXT -1 81 "The initial
+ condition for the solution of the RG equation for the Yukawa coupling
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 40 "lambda[0] := 0.999;    \+
+     # at 100 GeV" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#\"\"
+!$\"$***!\"$" }}}{EXCHG {PARA 5 "" 0 "" {TEXT -1 31 "The solution of t
+he RG equation" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 337 "lambda[S
+M] := nu -> sqrt (   ( ( beta[0,SM] - b[SM] ) / a[SM] ) * \n          \+
+           \n                       g[3,SM](nu)^2 / \n\n              \+
+   ( 1   -   ( g[3,SM](nu)^2 / g[30]^2 )^( ( beta[0,SM] - b[SM] ) / be
+ta[0,SM] )  *\n\n                     ( 1 - ( ( beta[0,SM] - b[SM] ) /
+ a[SM] ) * (g[30]^2 / lambda[0]^2) ) ) );              " }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#%#SMGf*6#%#nuG6\"6$%)operatorG%&arr
+owGF+-%%sqrtG6#**,&&%%betaG6$\"\"!F'\"\"\"&%\"bGF&!\"\"F8&%\"aGF&F;-&%
+\"gG6$\"\"$F'6#9$\"\"#,&F8F8*&)*&F>FE&F@6#\"#I!\"#*&F3F8F4F;F8,&F8F8**
+F3F8F<F;FJFE&F%6#F7FMF;F8F;F;F+F+F+" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 330 "lambda[MSSM] := nu -> sqrt (   ( ( beta[0,MSSM] - b[
+MSSM] ) / a[MSSM] ) * \n                     \n             g[3,MSSM](
+nu)^2 / \n\n         ( 1   -   ( g[3,MSSM](nu)^2 / g[30]^2 )^( ( beta[
+0,MSSM] - b[MSSM] ) / beta[0,MSSM] )  *\n\n               ( 1 - ( ( be
+ta[0,MSSM] - b[MSSM] ) / a[MSSM] ) * (g[30]^2 / lambda[0]^2) ) ) );   \+
+    " }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%'lambdaG6#%%MSSMGf*6#%#nuG6
+\"6$%)operatorG%&arrowGF+-%%sqrtG6#**,&&%%betaG6$\"\"!F'\"\"\"&%\"bGF&
+!\"\"F8&%\"aGF&F;-&%\"gG6$\"\"$F'6#9$\"\"#,&F8F8*&)*&F>FE&F@6#\"#I!\"#
+*&F3F8F4F;F8,&F8F8**F3F8F<F;FJFE&F%6#F7FMF;F8F;F;F+F+F+" }}}{EXCHG 
+{PARA 5 "" 0 "" {TEXT -1 31 "Checking the initial conditions" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 51 "evalf(lambda[SM](10^2));\nev
+alf(lambda[MSSM](10^2));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+)*****
+*)**!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+*******)**!#5" }}}
+{EXCHG {PARA 5 "" 0 "" {TEXT -1 47 "Evaluating the Yukawa coupling at \+
+the GUT scale" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "evalf(lamb
+da[SM](10^15));\nevalf(lambda[MSSM](10^15));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#$\"+4Z$4R'!#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+<t
+tY9!\"*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "plot( 'lambda[SM
+](10^t)',t=2..18, y= 0..1);" }}{PARA 13 "" 1 "" {GLPLOT2D 400 300 300 
+{PLOTDATA 2 "6%-%'CURVESG6$7S7$$\"\"#\"\"!$\"3#>/#[(******)**!#=7$$\"3
+lmmmmWv[B!#<$\"3)*fF#pYhUj*F-7$$\"3NLLLjQ?_EF1$\"3/]8=kSEl$*F-7$$\"3mm
+mmYWY$*HF1$\"3+xqAP,$*)4*F-7$$\"3jmmmEr)pL$F1$\"3vB1#=W=D'))F-7$$\"3%H
+LLL5x)yOF1$\"3I;B:FaG`')F-7$$\"3cmmmwG&e*RF1$\"3m#pr,\\6)y%)F-7$$\"3>+
+++IH1CVF1$\"3qlzZ$f:]J)F-7$$\"3SmmmO#)\\jYF1$\"3s#>!>g9;h\")F-7$$\"3h*
+*****p\\%=+&F1$\"3oWpQikU@!)F-7$$\"3`LLLth()\\`F1$\"3uCx0Ca0!*yF-7$$\"
+3rmmmYAUccF1$\"3)))=^LC%\\$y(F-7$$\"3p******>0_,gF1$\"331HMX+iswF-7$$
+\"3*)*******zN![jF1$\"3vfWEB&G*pvF-7$$\"3&*******zu'>o'F1$\"3+dB5OmGyu
+F-7$$\"3gmmmO%4_)pF1$\"3xm$yef$o+uF-7$$\"36LLL`MzXtF1$\"3/:\\z-^q9tF-7
+$$\"3\"GLLLTb7l(F1$\"3dyB/-,vYsF-7$$\"3r)******G!e1!)F1$\"3;5)pAiIG<(F
+-7$$\"3pJLL8I5@$)F1$\"3xDxS#zA;6(F-7$$\"3M+++!H%=m')F1$\"3'GVF?zb'[qF-
+7$$\"3A******pKy%**)F1$\"3cq@j')\\X#*pF-7$$\"3kKLLL=kP$*F1$\"3<v_IybUP
+pF-7$$\"3DLLLBI\\_'*F1$\"3gXp<hk!**)oF-7$$\"3_mmmmD5#***F1$\"3SJc8s4mT
+oF-7$$\"3ammmVh[M5!#;$\"334DFK3j%z'F-7$$\"3#******p!R>l5Fds$\"3PvH<MA3
+cnF-7$$\"3emmmK\"f$)4\"Fds$\"3q\"3=5m#z;nF-7$$\"3%******f0AE8\"Fds$\"3
+'*))3)yd1'ymF-7$$\"3%)*****>kTh;\"Fds$\"3?\"p+1(HZVmF-7$$\"3))*****\\c
+t&)>\"Fds$\"3d.Z%o7a9h'F-7$$\"3')*****fo$eM7Fds$\"3c)G5C@^!ylF-7$$\"3A
+LLL\"QSpE\"Fds$\"3B%))o$*)H')\\lF-7$$\"3(*******f!)[,8Fds$\"3b_iBPPd@l
+F-7$$\"3gmmm\"R$zK8Fds$\"3Ap$H![QZ(\\'F-7$$\"3(******zQ=qO\"Fds$\"3%Hm
+n(zirskF-7$$\"3;LLLU9A*R\"Fds$\"3\"RQ:()**p3X'F-7$$\"3!******H\"H)GV\"
+Fds$\"3U`+KC%p%HkF-7$$\"3FLLL`Jzl9Fds$\"3xmA=-]!*4kF-7$$\"3$******\\7Z
+-]\"Fds$\"39%z?ye-3R'F-7$$\"3rmmm%RIM`\"Fds$\"3ifo(*RhotjF-7$$\"3immm!
+3ltc\"Fds$\"32NF,1EVdjF-7$$\"3JLLLq(=5g\"Fds$\"3/jLm+p^UjF-7$$\"3'****
+**f,V>j\"Fds$\"3)4+'pJ6$)HjF-7$$\"39LLL\"p&Qn;Fds$\"3_S5q.NX;jF-7$$\"3
+WmmmUg3*p\"Fds$\"3m)*)[&pn]0jF-7$$\"3/+++H_)Gt\"Fds$\"3?-(om+i[H'F-7$$
+\"3/+++j`Bl<Fds$\"3PA_7jzj&G'F-7$$\"#=F*$\"3f)yI(>xuwiF--%'COLOURG6&%$
+RGBG$\"#5!\"\"$F*F*Fa[l-%+AXESLABELSG6$Q\"t6\"Q\"yFf[l-%%VIEWG6$;F(Ffz
+;Fa[l$\"\"\"F*" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 
+0 "Curve 1" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 47 "plot( 'lambd
+a[MSSM](10^t)',t=2..18, y= 0..2.0);" }}{PARA 13 "" 1 "" {GLPLOT2D 400 
+300 300 {PLOTDATA 2 "6%-%'CURVESG6$7hn7$$\"\"#\"\"!$\"3%opU()******)**
+!#=7$$\"3lmmmmWv[B!#<$\"3Y&QC7R(>#*)*F-7$$\"3NLLLjQ?_EF1$\"3j$[JJ3Ns\"
+)*F-7$$\"3mmmmYWY$*HF1$\"3o9H%=&\\PV(*F-7$$\"3jmmmEr)pL$F1$\"3'y9wVfa%
+z'*F-7$$\"3%HLLL5x)yOF1$\"3*35D]!*)eD'*F-7$$\"3cmmmwG&e*RF1$\"3r[wt.o(
+Qe*F-7$$\"3>+++IH1CVF1$\"3*[1&39\"\\'[&*F-7$$\"3SmmmO#)\\jYF1$\"3\"y?U
+xs3/_*F-7$$\"3h******p\\%=+&F1$\"3_md)=oy-]*F-7$$\"3`LLLth()\\`F1$\"31
+')oD(y4x[*F-7$$\"3rmmmYAUccF1$\"3p?2EB0N$[*F-7$$\"3p******>0_,gF1$\"3b
+]f1()3)e[*F-7$$\"3*)*******zN![jF1$\"3WxF=?oJ'\\*F-7$$\"3&*******zu'>o
+'F1$\"3(>ti9u$)Q^*F-7$$\"3gmmmO%4_)pF1$\"3cu(\\*yoGO&*F-7$$\"36LLL`MzX
+tF1$\"3+\"f'4+s0r&*F-7$$\"3\"GLLLTb7l(F1$\"3H5u5Xpe2'*F-7$$\"3r)******
+G!e1!)F1$\"3o%3]()R2&e'*F-7$$\"3pJLL8I5@$)F1$\"3G%pyB#yU6(*F-7$$\"3M++
++!H%=m')F1$\"3jK++25Oy(*F-7$$\"3A******pKy%**)F1$\"39Xos*=v6&)*F-7$$\"
+3kKLLL=kP$*F1$\"3#[*[\"z5lr$**F-7$$\"3DLLLBI\\_'*F1$\"3C,!)HdNd-5F17$$
+\"3_mmmmD5#***F1$\"3H'oF%zUB85F17$$\"3ammmVh[M5!#;$\"3o(Q.3iCc-\"F17$$
+\"3#******p!R>l5Fds$\"3QDBYN+gP5F17$$\"3emmmK\"f$)4\"Fds$\"3a\"[!*Qk'*
+=0\"F17$$\"3%******f0AE8\"Fds$\"3$ohsmY0$o5F17$$\"3%)*****>kTh;\"Fds$
+\"3%HINx9ah3\"F17$$\"3))*****\\ct&)>\"Fds$\"3]0nTH1K06F17$$\"3')*****f
+o$eM7Fds$\"3#fL5eB\"3H6F17$$\"3ALLL\"QSpE\"Fds$\"3l^S;2](H:\"F17$$\"3(
+*******f!)[,8Fds$\"31-/EoWc\"=\"F17$$\"3gmmm\"R$zK8Fds$\"3u(*Q&>wh1@\"
+F17$$\"3(******zQ=qO\"Fds$\"3\\'H;&[\"olC\"F17$$\"3;LLLU9A*R\"Fds$\"3'
+)QfP'z.]G\"F17$$\"3!******H\"H)GV\"Fds$\"31>7UE\"H5L\"F17$$\"3FLLL`Jzl
+9Fds$\"3Q=\"oL>YJQ\"F17$$\"3$******\\7Z-]\"Fds$\"3QBNe0zBZ9F17$$\"3rmm
+m%RIM`\"Fds$\"3D&yayG#*3_\"F17$$\"3immm!3ltc\"Fds$\"3cA)=\"*H7Ch\"F17$
+$\"3JLLLq(=5g\"Fds$\"3'yx@8+Scs\"F17$$\"3'******f,V>j\"Fds$\"3m]*G.Q'=
+e=F17$$\"39LLL\"p&Qn;Fds$\"3xr<0@DVi?F17$$\"3WmmmUg3*p\"Fds$\"3u4)G%*=
+:bK#F17$$\"3CLL$ej&)fr\"Fds$\"3go^#fEm)=DF17$$\"3/+++H_)Gt\"Fds$\"3@e;
+k(e#>uFF17$$\"3/+++'Hg!\\<Fds$\"3\\nDr=O^9JF17$$\"3/+++j`Bl<Fds$\"33bO
+/`)e(HOF17$$\"3@++DAl#Rx\"Fds$\"3m,$Q4hxR/%F17$$\"3-++]\"o<Ey\"Fds$\"3
+ABonPSfZYF17$$\"3v**\\7hK'py\"Fds$\"3e[Q[(p$fu]F17$$\"3%)***\\2%)38z\"
+Fds$\"3z_ZJ]6K[cF17$$\"3))*\\i0j\"[$z\"Fds$\"3G.U#fOm--'F17$$\"3#***\\
+P?Wl&z\"Fds$\"3Kdohk*fxZ'F17$$\"3%*\\7G:3u'z\"Fds$\"3:$>?zT\"y\\nF17$$
+\"3'**\\(=5s#yz\"Fds$\"3**[ky$>+&fqF17$$\"3)*\\P40O\"*)z\"Fds$\"3:,2v=
+')\\;uF17$$\"#=F*$\"3)o)p\"o=cT$yF1-%'COLOURG6&%$RGBG$\"#5!\"\"$F*F*Fh
+^l-%+AXESLABELSG6$Q\"t6\"Q\"yF]_l-%%VIEWG6$;F(F]^l;Fh^l$\"#?Fg^l" 1 2 
+0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" }}}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}}{MARK "19 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 
+1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

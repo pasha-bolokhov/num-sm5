@@ -1,0 +1,55 @@
+----------- preliminary check -----------
+pi = 3.14159
+e2_coupling(100 MeV, 1 flavor) / (4 pi) = 1/136.023
+e2_coupling(100 GeV, 3 flavors) / (4 pi) = 1/129.671
+----------- LEAP 1 ----------
+setting all \eta's to zero, \xi to 1.0
+lazy computation gives at 100 MeV:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.004458, \xi = 1.007133
+delta_log mu = 0.200000
+GG scale 0.001585, e^2/4*pi = 1/136.902
+GG scale 0.002512, e^2/4*pi = 1/136.805
+GG scale 0.003981, e^2/4*pi = 1/136.707
+GG scale 0.006310, e^2/4*pi = 1/136.609
+GG scale 0.010000, e^2/4*pi = 1/136.511
+GG scale 0.015849, e^2/4*pi = 1/136.414
+GG scale 0.025119, e^2/4*pi = 1/136.316
+GG scale 0.039811, e^2/4*pi = 1/136.218
+GG scale 0.063096, e^2/4*pi = 1/136.12
+GG scale 0.100000, e^2/4*pi = 1/136.023
+***************** at 0.100000 GeV
+Continuous solving in 10 steps gives:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.004536, \xi = 1.007183
+----------- LEAP 2 ----------
+GG scale 0.134928, e^2/4*pi = 1/135.896
+GG scale 0.182056, e^2/4*pi = 1/135.768
+GG scale 0.245646, e^2/4*pi = 1/135.641
+GG scale 0.331445, e^2/4*pi = 1/135.514
+GG scale 0.447214, e^2/4*pi = 1/135.387
+GG scale 0.603418, e^2/4*pi = 1/135.26
+GG scale 0.814181, e^2/4*pi = 1/135.133
+GG scale 1.098561, e^2/4*pi = 1/135.006
+GG scale 1.482269, e^2/4*pi = 1/134.878
+GG scale 2.000000, e^2/4*pi = 1/134.751
+***************** at 2.000000 GeV
+Continuous solving in 10 steps gives:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.007592,
+  \eta^\mu_1 = 0.000000, \eta^\mu_2 = -0.002989,
+  \xi = 1.016681
+----------- LEAP 3 ----------
+GG scale 2.957515, e^2/4*pi = 1/134.502
+GG scale 4.373448, e^2/4*pi = 1/134.253
+GG scale 6.467270, e^2/4*pi = 1/134.004
+GG scale 9.563525, e^2/4*pi = 1/133.755
+GG scale 14.142136, e^2/4*pi = 1/133.506
+GG scale 20.912791, e^2/4*pi = 1/133.257
+GG scale 30.924949, e^2/4*pi = 1/133.008
+GG scale 45.730505, e^2/4*pi = 1/132.759
+GG scale 67.624334, e^2/4*pi = 1/132.51
+GG scale 100.000000, e^2/4*pi = 1/132.261
+***************** at 100.000000 GeV
+Continuous solving in 10 steps gives:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.011764,
+  \eta^\mu_1 = 0.000000, \eta^\mu_2 = -0.007071,
+  \eta^\tau_1 = 0.000000, \eta^\tau_2 = -0.004023,
+  \xi = 1.035813

@@ -1,0 +1,28 @@
+----------- preliminary check -----------
+pi = 3.14159
+e2_coupling(100 MeV, 1 flavor) / (4 pi) = 1/136.023
+e2_coupling(100 GeV, 3 flavors) / (4 pi) = 1/129.671
+----------- LEAP 1 ----------
+setting all \eta's to zero, \xi to 1.0
+lazy computation gives at 100 MeV:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.004458, \xi = 1.007133
+delta_log mu = 2.000000
+GG scale 0.100000, e^2/4*pi = 1/136.023
+***************** at 0.100000 GeV
+Continuous solving in 1 steps gives:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.004490, \xi = 1.007184
+----------- LEAP 2 ----------
+GG scale 2.000000, e^2/4*pi = 1/134.751
+***************** at 2.000000 GeV
+Continuous solving in 1 steps gives:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.007526,
+  \eta^\mu_1 = 0.000000, \eta^\mu_2 = -0.002970,
+  \xi = 1.016685
+----------- LEAP 3 ----------
+GG scale 100.000000, e^2/4*pi = 1/132.261
+***************** at 100.000000 GeV
+Continuous solving in 1 steps gives:
+  \eta^e_1 = 0.000000, \eta^e_2 = -0.011662,
+  \eta^\mu_1 = 0.000000, \eta^\mu_2 = -0.007016,
+  \eta^\tau_1 = 0.000000, \eta^\tau_2 = -0.003988,
+  \xi = 1.035821

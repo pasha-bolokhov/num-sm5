@@ -1,0 +1,944 @@
+%!PS-Adobe-2.0
+%%Title: yukawa_run.mws - [Server 1]
+%%Creator: Maple 7.00 IBM RISC UNIX
+%%DocumentFonts: Times-Roman Courier Times-Bold Times-BoldItalic Times-Italic Symbol 
+%%Pages: 1
+%%EndComments
+% /sc { setrgbcolor } def % color
+% /stc { setrgbcolor } def % color
+/sc { 11 mul exch 59 mul add exch 30 mul add 100 div setgray } def % b&w
+/stc { pop pop pop 0 setgray } def % b&w
+/fsf    %% stk: size font 
+{ findfont exch scalefont setfont } def 
+/line   %% stk: width x1 y1 x2 y2 
+{ gsave newpath 4 2 roll moveto lineto setlinewidth 
+  stroke grestore } def 
+/underline   %% stk: string ulOffset ulThickness 
+{ gsave setlinewidth 0 exch rmoveto  %% stk: string 
+  dup stringwidth pop 0 rlineto stroke       %% stk: string 
+  grestore show } def 
+/pagenum   %% stk: x y string 
+{ gsave 10 /Times-Roman fsf 
+  3 1 roll moveto 
+  dup stringwidth pop       %% stk: string wx 
+  2 div neg -14 rmoveto     %% stk: string 
+  show grestore 
+} def 
+/solid { [] 0 setdash } def 
+/dot { [1 3] 0 setdash } def 
+/dash { [5 5] 0 setdash } def 
+/dashdot { [5 3 1 3] 0 setdash } def 
+% ReEncodeSmall is copied from the Postscript Tutorial and Cookbook 
+% Adobe Systems Inc., Addison-Wesley, page 211-212 
+/reencsmalldict 12 dict def 
+/ReEncodeSmall 
+{ reencsmalldict begin 
+  /newcodesandnames exch def 
+  /newfontname exch def 
+  /basefontname exch def 
+  /basefontdict basefontname findfont def 
+  /newfont basefontdict maxlength dict def 
+  basefontdict 
+  { exch dup /FID ne 
+    { dup /Encoding eq 
+      { exch dup length array copy newfont 3 1 roll put } 
+      { exch newfont 3 1 roll put } 
+      ifelse 
+    } 
+    {pop pop} 
+    ifelse 
+  } forall 
+  newfont /FontName newfontname put 
+  newcodesandnames aload pop 
+  newcodesandnames length 2 idiv 
+  { newfont /Encoding get 3 1 roll put } repeat 
+  newfontname newfont definefont pop 
+  end 
+} def 
+/ExtraChars [ 
+] def
+/Times-Roman /Times-Roman-Maple ExtraChars ReEncodeSmall
+/Courier /Courier-Maple ExtraChars ReEncodeSmall
+/Times-Bold /Times-Bold-Maple ExtraChars ReEncodeSmall
+/Times-BoldItalic /Times-BoldItalic-Maple ExtraChars ReEncodeSmall
+/Times-Italic /Times-Italic-Maple ExtraChars ReEncodeSmall
+%%EndProlog
+%%Page: 1 1
+ gsave  newpath
+54 720 moveto
+504 0 rlineto
+0 -648 rlineto
+-504 0 rlineto
+0 648 rlineto
+closepath clip newpath
+gsave
+0 setgray
+0 setlinewidth
+solid
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 711 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+78 711 moveto
+(restart:) show
+grestore
+newpath
+59 718 moveto
+56 718 lineto
+56 710 lineto
+59 710 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 698 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 705 moveto
+56 705 lineto
+56 697 lineto
+59 697 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 685 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 692 moveto
+56 692 lineto
+56 684 lineto
+59 684 lineto
+stroke
+18 /Times-Bold-Maple fsf
+gsave
+0 setgray
+95 656 moveto
+(Testing the solution of the RG equation for the Yukawa ) show
+grestore
+gsave
+0 setgray
+278 633 moveto
+(coupling) show
+grestore
+gsave
+0 setgray
+127 598 moveto
+(with accounting for one gauge coupling running) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 setgray
+195 578 moveto
+(All quantites are assumed to be to one loop only) show
+grestore
+newpath
+59 679 moveto
+56 679 lineto
+56 578 lineto
+59 578 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 566 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+78 566 moveto
+(\12) show
+grestore
+12 /Times-BoldItalic-Maple fsf
+gsave
+0 setgray
+78 552 moveto
+(This is the running coupling constant, for example the strong coupling) show
+grestore
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+428 552 moveto
+(\12) show
+grestore
+gsave
+1 0 0 stc
+78 539 moveto
+(gg := t  ->  g0^2 / \( 1  - 2 * beta_0*g0^2 * \(t - t0\)\);) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+240 510 moveto
+( := ) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+228 510 moveto
+(gg) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+262 510 moveto
+(\256) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+256 510 moveto
+(t) show
+grestore
+gsave
+0 0 1 sc
+1 setlinewidth
+solid
+1 276 516 393 516 line
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+325 520 moveto
+(g0) show
+grestore
+8 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+338 526 moveto
+(2) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+286 500 moveto
+(-) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+277 500 moveto
+(1) show
+grestore
+gsave
+0 0 1 stc
+295 500 moveto
+(2) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+304 500 moveto
+(beta_0) show
+grestore
+gsave
+0 0 1 stc
+339 500 moveto
+(g0) show
+grestore
+8 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+352 506 moveto
+(2) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+359 500 moveto
+(\() show
+grestore
+gsave
+0 0 1 stc
+388 500 moveto
+(\)) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+369 500 moveto
+(-) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+363 500 moveto
+(t) show
+grestore
+gsave
+0 0 1 stc
+378 500 moveto
+(t0) show
+grestore
+newpath
+59 573 moveto
+56 573 lineto
+56 499 lineto
+59 499 lineto
+stroke
+12 /Times-BoldItalic-Maple fsf
+gsave
+0 setgray
+64 486 moveto
+(This is the solution of the RG equation, which is supposed to satisfy the initial condition) show
+grestore
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+498 486 moveto
+(\12) show
+grestore
+gsave
+1 0 0 stc
+64 473 moveto
+(lambda := t -> sqrt\(\(beta_0 - b\)/a * gg\(t\) /\12) show
+grestore
+gsave
+1 0 0 stc
+64 460 moveto
+(         \( 1 - \(gg\(t\)/g0^2\)^\(\(beta_0 - b\)/beta_0\)  *\12) show
+grestore
+gsave
+1 0 0 stc
+64 447 moveto
+(              \( 1 - \(\(beta_0 - b\)/a\)*\(g0^2/lambda0^2\)\)\)\);) show
+grestore
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 434 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+161 405 moveto
+( := ) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+155 405 moveto
+(l) show
+grestore
+gsave
+0 0 1 stc
+183 405 moveto
+(\256) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+177 405 moveto
+(t) show
+grestore
+gsave
+0 0 1 sc
+1 setlinewidth
+solid
+newpath
+466 429 moveto
+231 429 lineto
+214 357 lineto
+205 410 lineto
+197 402 lineto
+stroke
+grestore
+gsave
+0 0 1 sc
+1 setlinewidth
+solid
+1 233 411 465 411 line
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+306 415 moveto
+(\() show
+grestore
+gsave
+0 0 1 stc
+361 415 moveto
+(\)) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+345 415 moveto
+(-) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+310 415 moveto
+(beta_0) show
+grestore
+gsave
+0 0 1 stc
+354 415 moveto
+(b) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+379 415 moveto
+(\() show
+grestore
+gsave
+0 0 1 stc
+387 415 moveto
+(\)) show
+grestore
+gsave
+0 0 1 stc
+367 415 moveto
+(gg) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+383 415 moveto
+(t) show
+grestore
+gsave
+0 0 1 stc
+234 369 moveto
+(a) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+243 397 moveto
+(\346) show
+grestore
+gsave
+0 0 1 stc
+243 359 moveto
+(\350) show
+grestore
+gsave
+0 0 1 stc
+243 390 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+243 383 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+243 376 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+243 369 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+243 366 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+459 397 moveto
+(\366) show
+grestore
+gsave
+0 0 1 stc
+459 359 moveto
+(\370) show
+grestore
+gsave
+0 0 1 stc
+459 390 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+459 383 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+459 376 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+459 369 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+459 366 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+257 369 moveto
+(-) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+248 369 moveto
+(1) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+266 379 moveto
+(\346) show
+grestore
+gsave
+0 0 1 stc
+266 359 moveto
+(\350) show
+grestore
+gsave
+0 0 1 stc
+266 372 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+266 366 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+298 379 moveto
+(\366) show
+grestore
+gsave
+0 0 1 stc
+298 359 moveto
+(\370) show
+grestore
+gsave
+0 0 1 stc
+298 372 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+298 366 moveto
+(\367) show
+grestore
+gsave
+0 0 1 sc
+1 setlinewidth
+solid
+1 271 375 297 375 line
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+284 379 moveto
+(\() show
+grestore
+gsave
+0 0 1 stc
+292 379 moveto
+(\)) show
+grestore
+gsave
+0 0 1 stc
+272 379 moveto
+(gg) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+288 379 moveto
+(t) show
+grestore
+gsave
+0 0 1 stc
+275 359 moveto
+(g0) show
+grestore
+8 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+288 365 moveto
+(2) show
+grestore
+8 /Symbol fsf
+gsave
+0 0 1 stc
+303 401 moveto
+(\346) show
+grestore
+gsave
+0 0 1 stc
+303 388 moveto
+(\350) show
+grestore
+gsave
+0 0 1 stc
+303 396 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+303 393 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+343 401 moveto
+(\366) show
+grestore
+gsave
+0 0 1 stc
+343 388 moveto
+(\370) show
+grestore
+gsave
+0 0 1 stc
+343 396 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+343 393 moveto
+(\367) show
+grestore
+gsave
+0 0 1 sc
+1 setlinewidth
+solid
+1 307 398 342 398 line
+grestore
+8 /Symbol fsf
+gsave
+0 0 1 stc
+331 401 moveto
+(-) show
+grestore
+8 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+308 401 moveto
+(beta_0) show
+grestore
+gsave
+0 0 1 stc
+337 401 moveto
+(b) show
+grestore
+gsave
+0 0 1 stc
+314 388 moveto
+(beta_0) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+349 381 moveto
+(\346) show
+grestore
+gsave
+0 0 1 stc
+349 359 moveto
+(\350) show
+grestore
+gsave
+0 0 1 stc
+349 374 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+349 367 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+349 366 moveto
+(\347) show
+grestore
+gsave
+0 0 1 stc
+454 381 moveto
+(\366) show
+grestore
+gsave
+0 0 1 stc
+454 359 moveto
+(\370) show
+grestore
+gsave
+0 0 1 stc
+454 374 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+454 367 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+454 366 moveto
+(\367) show
+grestore
+gsave
+0 0 1 stc
+363 369 moveto
+(-) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+354 369 moveto
+(1) show
+grestore
+gsave
+0 0 1 sc
+1 setlinewidth
+solid
+1 372 375 453 375 line
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+373 379 moveto
+(\() show
+grestore
+gsave
+0 0 1 stc
+428 379 moveto
+(\)) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+412 379 moveto
+(-) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+377 379 moveto
+(beta_0) show
+grestore
+gsave
+0 0 1 stc
+421 379 moveto
+(b) show
+grestore
+gsave
+0 0 1 stc
+434 379 moveto
+(g0) show
+grestore
+8 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+447 385 moveto
+(2) show
+grestore
+12 /Times-Italic-Maple fsf
+gsave
+0 0 1 stc
+399 359 moveto
+(a) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+408 359 moveto
+(l0) show
+grestore
+8 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+421 365 moveto
+(2) show
+grestore
+newpath
+59 494 moveto
+56 494 lineto
+56 358 lineto
+59 358 lineto
+stroke
+12 /Times-BoldItalic-Maple fsf
+gsave
+0 setgray
+64 345 moveto
+(This is the RG equation to one loop) show
+grestore
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 333 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+78 333 moveto
+(\12) show
+grestore
+gsave
+1 0 0 stc
+78 320 moveto
+(simplify\(expand\(eval\(diff\(lambda\(t\),t\) - a * lambda\(t\)^3 - b * ) show
+grestore
+gsave
+1 0 0 stc
+78 307 moveto
+(gg\(t\) * lambda\(t\)\)\)\);) show
+grestore
+12 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+308 290 moveto
+(0) show
+grestore
+newpath
+59 353 moveto
+56 353 lineto
+56 289 lineto
+59 289 lineto
+stroke
+12 /Times-BoldItalic-Maple fsf
+gsave
+0 setgray
+64 276 moveto
+(This is the test of the initial condition) show
+grestore
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+248 276 moveto
+(\12) show
+grestore
+gsave
+1 0 0 stc
+64 263 moveto
+(\12) show
+grestore
+12 /Times-BoldItalic-Maple fsf
+12 /Courier-Maple fsf
+gsave
+1 0 0 stc
+64 249 moveto
+(simplify\(expand\(eval\(lambda\(t0\)^2\)\)\);) show
+grestore
+12 /Symbol fsf
+gsave
+0 0 1 stc
+302 230 moveto
+(l0) show
+grestore
+8 /Times-Roman-Maple fsf
+gsave
+0 0 1 stc
+315 236 moveto
+(2) show
+grestore
+newpath
+59 284 moveto
+56 284 lineto
+56 229 lineto
+59 229 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 217 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 224 moveto
+56 224 lineto
+56 216 lineto
+59 216 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 204 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 211 moveto
+56 211 lineto
+56 203 lineto
+59 203 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 191 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 198 moveto
+56 198 lineto
+56 190 lineto
+59 190 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 178 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 185 moveto
+56 185 lineto
+56 177 lineto
+59 177 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 165 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 172 moveto
+56 172 lineto
+56 164 lineto
+59 164 lineto
+stroke
+12 /Courier-Maple fsf
+gsave
+0 setgray
+64 152 moveto
+(> ) show
+grestore
+12 /Courier-Maple fsf
+newpath
+59 159 moveto
+56 159 lineto
+56 151 lineto
+59 151 lineto
+stroke
+grestore
+ grestore showpage
+%%Trailer
+%% END of Maple Session Output
